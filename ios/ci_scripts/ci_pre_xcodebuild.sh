@@ -1,27 +1,23 @@
 #!/bin/bash
 # Xcode Cloud pre-xcodebuild script.
-# Runs before every build action. Installs XcodeGen and generates the .xcodeproj
-# from ios/project.yml so we never commit a binary project file to git.
+# Runs immediately before every xcodebuild invocation.
+# XcodeGen is installed in ci_post_clone.sh — this script only generates the project.
 set -euo pipefail
 
-echo "=== MERIDIAN Xcode Cloud pre-build ==="
-echo "CI_XCODE_PROJECT: ${CI_XCODE_PROJECT:-not set}"
-echo "CI_WORKSPACE:     ${CI_WORKSPACE:-not set}"
+echo "=== MERIDIAN pre-xcodebuild: generating Xcode project ==="
 
-# ── Install XcodeGen via Homebrew ──────────────────────────────────────────────
+# ── Verify XcodeGen is available ─────────────────────────────────────────────
 if ! command -v xcodegen &> /dev/null; then
-    echo "Installing XcodeGen..."
+    echo "XcodeGen not found — installing now (fallback from post-clone)..."
     brew install xcodegen
-else
-    echo "XcodeGen already installed: $(xcodegen version)"
 fi
 
-# ── Generate the Xcode project ─────────────────────────────────────────────────
-# CI_WORKSPACE is the directory that contains the ios/ folder
+# ── Generate the Xcode project from project.yml ──────────────────────────────
+# SCRIPT_DIR = ios/ci_scripts/  →  IOS_DIR = ios/
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-IOS_DIR="$(dirname "$SCRIPT_DIR")"   # ios/ is one level above ci_scripts/
+IOS_DIR="$(dirname "$SCRIPT_DIR")"
 
-echo "Generating MERIDIAN.xcodeproj from project.yml..."
+echo "Working directory: $IOS_DIR"
 cd "$IOS_DIR"
 xcodegen generate --spec project.yml --project .
 
