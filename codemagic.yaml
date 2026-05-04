@@ -1,0 +1,176 @@
+# Codemagic CI/CD for MERIDIAN
+# Docs: https://docs.codemagic.io/yaml-quick-start/building-an-ios-app/
+#
+# HOW TO USE:
+# 1. Push this repo to GitHub
+# 2. Sign in at codemagic.io with your GitHub account
+# 3. Add New Application → select this repo → "codemagic.yaml" configuration
+# 4. Set environment variables in Codemagic UI (see "Environment variables" below)
+# 5. Trigger a build — Codemagic uploads the IPA to TestFlight automatically
+
+workflows:
+
+  # ── TestFlight release ───────────────────────────────────────────────────────
+  meridian-testflight:
+    name: MERIDIAN → TestFlight
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: "main"
+          include: true
+      cancel_previous_builds: true
+
+    environment:
+      xcode: "16.2"
+      cocoapods: default
+      groups:
+        - app_store_credentials   # APP_STORE_CONNECT_KEY_IDENTIFIER, _ISSUER_ID, _PRIVATE_KEY
+        - certificate_credentials # CERTIFICATE_PRIVATE_KEY
+
+      # Set these in the Codemagic UI under "Environment variables":
+      #   APP_STORE_CONNECT_KEY_IDENTIFIER  — from App Store Connect → Users & Access → Keys
+      #   APP_STORE_CONNECT_ISSUER_ID       — same page
+      #   APP_STORE_CONNECT_PRIVATE_KEY     — contents of the .p8 file (mark as secure)
+      #   CERTIFICATE_PRIVATE_KEY           — your iOS Distribution certificate private key PEM
+      vars:
+        BUNDLE_ID: com.meridian.app
+        XCODE_PROJECT: ios/MERIDIAN.xcodeproj
+        XCODE_SCHEME: MERIDIAN
+
+    scripts:
+      # 1 — Install XcodeGen and generate the .xcodeproj from project.yml
+      - name: Generate Xcode project
+        script: |
+          brew install xcodegen
+          cd ios
+          xcodegen generate --spec project.yml --project .
+          echo "Generated:"
+          ls -la MERIDIAN.xcodeproj/
+
+      # 2 — Resolve Swift Package dependencies
+      - name: Resolve SPM dependencies
+        script: |
+          xcodebuild -resolvePackageDependencies \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME"
+
+      # 3 — Set up code signing (automatic via App Store Connect API key)
+      - name: Set up code signing
+        script: |
+          keychain initialize
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type IOS_APP_STORE \
+            --create
+          keychain add-certificates
+          xcode-project use-profiles
+
+      # 4 — Bump build number to Codemagic build number
+      - name: Set build number
+        script: |
+          cd ios
+          if [ ! -f "MERIDIAN/Info.plist" ]; then
+            echo "ERROR: Info.plist not found — xcodegen must run before agvtool." >&2
+            exit 1
+          fi
+          agvtool new-version -all "$BUILD_NUMBER"
+
+      # 5 — Build and archive
+      - name: Build for App Store
+        script: |
+          TEAM_ID=$(app-store-connect list-certificates --type IOS_DISTRIBUTION --json | jq -r '.[0].attributes.teamId // empty')
+          if [ -z "$TEAM_ID" ]; then
+            echo "ERROR: Could not extract team ID from IOS_DISTRIBUTION certificate list." >&2
+            exit 1
+          fi
+          xcodebuild \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath build/MERIDIAN.xcarchive \
+            archive \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            | xcpretty
+
+      # 6 — Export IPA
+      - name: Export IPA
+        script: |
+          xcodebuild \
+            -exportArchive \
+            -archivePath build/MERIDIAN.xcarchive \
+            -exportPath build/ipa \
+            -exportOptionsPlist ios/ExportOptions.plist \
+            | xcpretty
+
+    artifacts:
+      - build/ipa/*.ipa
+      - build/MERIDIAN.xcarchive
+      - /tmp/xcodebuild_logs/*.log
+
+    publishing:
+      app_store_connect:
+        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
+        key_id: $APP_STORE_CONNECT_KEY_IDENTIFIER
+        issuer_id: $APP_STORE_CONNECT_ISSUER_ID
+        submit_to_testflight: true
+        beta_groups:
+          - Internal Testers
+      email:
+        recipients:
+          - up866106@gmail.com
+        notify:
+          success: true
+          failure: true
+
+  # ── Pull-request build check (no signing, just compile) ──────────────────────
+  meridian-pr-check:
+    name: MERIDIAN → PR Build Check
+    max_build_duration: 30
+    instance_type: mac_mini_m2
+
+    triggering:
+      events:
+        - pull_request
+      cancel_previous_builds: true
+
+    environment:
+      xcode: "16.2"
+
+    scripts:
+      - name: Generate Xcode project
+        script: |
+          brew install xcodegen
+          cd ios && xcodegen generate --spec project.yml --project .
+
+      - name: Resolve SPM dependencies
+        script: |
+          xcodebuild -resolvePackageDependencies \
+            -project ios/MERIDIAN.xcodeproj \
+            -scheme MERIDIAN
+
+      - name: Build (simulator, no signing)
+        script: |
+          xcodebuild \
+            -project ios/MERIDIAN.xcodeproj \
+            -scheme MERIDIAN \
+            -destination "platform=iOS Simulator,name=iPhone 15" \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO \
+            build \
+            | xcpretty
+
+      - name: Run unit tests
+        script: |
+          xcodebuild test \
+            -project ios/MERIDIAN.xcodeproj \
+            -scheme MERIDIAN \
+            -destination "platform=iOS Simulator,name=iPhone 15" \
+            CODE_SIGNING_ALLOWED=NO \
+            | xcpretty
+
+    artifacts:
+      - /tmp/xcodebuild_logs/*.log
