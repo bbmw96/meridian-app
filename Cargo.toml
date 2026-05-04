@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "mql",
+    "mql-wasm",
+]
+resolver = "2"

@@ -1,0 +1,19 @@
+{
+  "app_name": "MERIDIAN — Business Intelligence",
+  "subtitle": "Global Market Scanner & Currency",
+  "category": "Business",
+  "secondary_category": "Finance",
+  "privacy_policy_url": "https://meridian.io/privacy",
+  "support_url": "https://meridian.io/support",
+  "marketing_url": "https://meridian.io",
+  "description": "MERIDIAN is the world's first mobile-native global business intelligence operating system.\n\nScan any domain to reveal traffic, revenue estimates, and top competitors. Monitor live currency rates across 100+ pairs with intelligent alerts. Generate AI-powered ad creatives for any competitor. Query global markets in seconds using MQL — MERIDIAN Query Language, a purpose-built intelligence language.\n\nKEY FEATURES\n\n● Domain Scanner — Analyse competitor traffic, technology stacks, ad spend signals, and geography breakdowns\n● Currency Engine — Live rates across 100+ pairs with WebSocket-powered updates and customisable alerts\n● Opportunity Radar — AI-scored market opportunities ranked by traffic gap, FX stability, and growth potential\n● Creative Arsenal — Generate platform-ready ads (Instagram, TikTok, LinkedIn) from any competitor URL\n● MQL Terminal — Query markets with natural language: SCAN domain "competitor.com" COMPARE competitors TOP 5\n● 91 Languages — Full localisation including RTL support for Arabic, Hebrew, and Persian\n\nPRIVACY\n\nMERIDIAN analyses publicly available web data only. No personal data is collected or sold. All API communications use TLS 1.3 with certificate pinning. Credentials are stored exclusively in the iOS Keychain.",
+  "keywords": "business intelligence,competitor analysis,currency rates,market scanner,domain analysis,FX alerts,ad creative,MQL,global markets,market opportunities",
+  "release_notes": "v1.0.0 — Initial release.\n\n● MERIDIAN Query Language (MQL) — scan and query global markets\n● Live currency rates with WebSocket updates\n● AI creative generation for 5 platforms\n● Opportunity Radar with scoring\n● 91-language localisation including RTL",
+  "age_rating": "4+",
+  "export_compliance": {
+    "uses_encryption": true,
+    "encryption_standard": "TLS 1.3 (exempt)",
+    "exempt": true,
+    "exemption_reason": "Standard HTTPS/TLS networking. No custom cryptography."
+  }
+}

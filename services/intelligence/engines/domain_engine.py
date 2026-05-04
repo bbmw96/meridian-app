@@ -243,6 +243,34 @@ class DomainEngine:
 
         return competitors[:limit]
 
+    def _normalise(self, raw: str) -> str:
+        """Strip scheme, www prefix, path and trailing slash; lowercase."""
+        s = raw.strip().lower()
+        stripped = False
+        for prefix in ("https://www.", "http://www.", "https://", "http://"):
+            if s.startswith(prefix):
+                s = s[len(prefix):]
+                stripped = True
+                break
+        if not stripped and s.startswith("www."):
+            s = s[4:]
+        s = s.split("/")[0].split("?")[0].split("#")[0]
+        return s
+
+    def _is_valid(self, domain: str) -> bool:
+        """Return True only for plausible domain names (not IPs or bare words)."""
+        if not domain or "." not in domain:
+            return False
+        if domain == "localhost":
+            return False
+        parts = domain.split(".")
+        try:
+            socket.inet_aton(domain)
+            return False  # it's an IPv4 address
+        except socket.error:
+            pass
+        return all(p and re.match(r"^[a-z0-9\-]+$", p) for p in parts)
+
     async def estimate_traffic(self, domain: str) -> TrafficEstimate:
         backlinks = await self._estimate_backlinks(domain)
         crawl_freq = await self._get_crawl_frequency(domain)
