@@ -1,0 +1,99 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: realtime
+  namespace: meridian
+  labels:
+    app: realtime
+    project: MERIDIAN
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: realtime
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: realtime
+        project: MERIDIAN
+    spec:
+      containers:
+        - name: realtime
+          image: meridian/realtime:latest
+          ports:
+            - containerPort: 4001
+              protocol: TCP
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "200m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 4001
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 4001
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 3
+          env:
+            - name: REDIS_URL
+              valueFrom:
+                secretKeyRef:
+                  name: meridian-secrets
+                  key: redis-url
+            - name: KAFKA_BROKERS
+              valueFrom:
+                secretKeyRef:
+                  name: meridian-secrets
+                  key: kafka-brokers
+            - name: SECRET_KEY_BASE
+              valueFrom:
+                secretKeyRef:
+                  name: meridian-secrets
+                  key: secret-key-base
+            - name: MIX_ENV
+              value: "prod"
+            - name: PORT
+              value: "4001"
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
+            allowPrivilegeEscalation: false
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: realtime
+  namespace: meridian
+  labels:
+    app: realtime
+    project: MERIDIAN
+  annotations:
+    # Enable WebSocket passthrough on ALB/NLB
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: "3600"
+spec:
+  type: ClusterIP
+  selector:
+    app: realtime
+  ports:
+    - name: websocket
+      protocol: TCP
+      port: 4001
+      targetPort: 4001

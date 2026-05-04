@@ -1,0 +1,69 @@
+/* MERIDIAN — Indonesian */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Dasbor";
+"tab.scanner" = "Pemindai Intelijen";
+"tab.currency" = "Mata Uang";
+"tab.creative" = "Arsenal Kreatif";
+"tab.terminal" = "Terminal MQL";
+"tab.radar" = "Radar Peluang";
+"tab.settings" = "Pengaturan";
+
+/* Dashboard */
+"dashboard.title" = "Intelijen Global";
+"dashboard.opportunities" = "Peluang Pasar";
+"dashboard.recentScans" = "Pemindaian Terbaru";
+
+/* Scanner */
+"scanner.placeholder" = "Masukkan domain atau URL untuk dipindai";
+"scanner.scan" = "Pindai";
+"scanner.traffic" = "Lalu Lintas Bulanan";
+"scanner.competitors" = "Pesaing Utama";
+"scanner.keywords" = "Kata Kunci";
+
+/* Currency */
+"currency.title" = "Intelijen Mata Uang";
+"currency.convert" = "Konversi";
+"currency.alert" = "Atur Peringatan";
+"currency.rate" = "Nilai Tukar";
+"currency.change" = "Perubahan";
+
+/* Creative */
+"creative.title" = "Arsenal Kreatif";
+"creative.generate" = "Buat Kreatif";
+"creative.style" = "Gaya";
+"creative.language" = "Bahasa";
+"creative.platform" = "Platform";
+"creative.framework" = "Kerangka";
+
+/* Terminal */
+"terminal.title" = "Terminal MQL";
+"terminal.placeholder" = "Masukkan kueri MQL...";
+"terminal.run" = "Jalankan";
+"terminal.example" = "Muat Contoh";
+
+/* Radar */
+"radar.title" = "Radar Peluang";
+"radar.score" = "Skor";
+"radar.market" = "Pasar";
+"radar.geography" = "Geografi";
+
+/* Settings */
+"settings.title" = "Pengaturan";
+"settings.currency" = "Mata Uang Pilihan";
+"settings.language" = "Bahasa";
+"settings.alerts" = "Peringatan";
+"settings.about" = "Tentang MERIDIAN";
+"settings.privacy" = "Privasi";
+
+/* Errors */
+"error.network" = "Kesalahan jaringan. Silakan coba lagi.";
+"error.scan" = "Tidak dapat memindai domain. Periksa alamat dan coba lagi.";
+"error.creative" = "Pembuatan kreatif gagal. Silakan coba lagi.";
+
+/* Onboarding */
+"onboarding.title" = "Selamat Datang di MERIDIAN";
+"onboarding.subtitle" = "Intelijen bisnis global di saku Anda";
+"onboarding.start" = "Mulai";

@@ -1,0 +1,69 @@
+/* MERIDIAN — Thai */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "แดชบอร์ด";
+"tab.scanner" = "เครื่องสแกนข่าวกรอง";
+"tab.currency" = "สกุลเงิน";
+"tab.creative" = "คลังสร้างสรรค์";
+"tab.terminal" = "เทอร์มินัล MQL";
+"tab.radar" = "เรดาร์โอกาส";
+"tab.settings" = "การตั้งค่า";
+
+/* Dashboard */
+"dashboard.title" = "ข่าวกรองระดับโลก";
+"dashboard.opportunities" = "โอกาสทางการตลาด";
+"dashboard.recentScans" = "การสแกนล่าสุด";
+
+/* Scanner */
+"scanner.placeholder" = "ป้อนโดเมนหรือ URL เพื่อสแกน";
+"scanner.scan" = "สแกน";
+"scanner.traffic" = "ทราฟฟิกรายเดือน";
+"scanner.competitors" = "คู่แข่งหลัก";
+"scanner.keywords" = "คำสำคัญ";
+
+/* Currency */
+"currency.title" = "ข่าวกรองสกุลเงิน";
+"currency.convert" = "แปลงสกุลเงิน";
+"currency.alert" = "ตั้งการแจ้งเตือน";
+"currency.rate" = "อัตราแลกเปลี่ยน";
+"currency.change" = "การเปลี่ยนแปลง";
+
+/* Creative */
+"creative.title" = "คลังสร้างสรรค์";
+"creative.generate" = "สร้างเนื้อหาสร้างสรรค์";
+"creative.style" = "สไตล์";
+"creative.language" = "ภาษา";
+"creative.platform" = "แพลตฟอร์ม";
+"creative.framework" = "กรอบการทำงาน";
+
+/* Terminal */
+"terminal.title" = "เทอร์มินัล MQL";
+"terminal.placeholder" = "ป้อนคำสั่ง MQL...";
+"terminal.run" = "รัน";
+"terminal.example" = "โหลดตัวอย่าง";
+
+/* Radar */
+"radar.title" = "เรดาร์โอกาส";
+"radar.score" = "คะแนน";
+"radar.market" = "ตลาด";
+"radar.geography" = "ภูมิศาสตร์";
+
+/* Settings */
+"settings.title" = "การตั้งค่า";
+"settings.currency" = "สกุลเงินที่ต้องการ";
+"settings.language" = "ภาษา";
+"settings.alerts" = "การแจ้งเตือน";
+"settings.about" = "เกี่ยวกับ MERIDIAN";
+"settings.privacy" = "ความเป็นส่วนตัว";
+
+/* Errors */
+"error.network" = "เกิดข้อผิดพลาดในเครือข่าย กรุณาลองอีกครั้ง";
+"error.scan" = "ไม่สามารถสแกนโดเมนได้ ตรวจสอบที่อยู่แล้วลองอีกครั้ง";
+"error.creative" = "การสร้างเนื้อหาล้มเหลว กรุณาลองอีกครั้ง";
+
+/* Onboarding */
+"onboarding.title" = "ยินดีต้อนรับสู่ MERIDIAN";
+"onboarding.subtitle" = "ข่าวกรองธุรกิจระดับโลกในกระเป๋าของคุณ";
+"onboarding.start" = "เริ่มต้น";

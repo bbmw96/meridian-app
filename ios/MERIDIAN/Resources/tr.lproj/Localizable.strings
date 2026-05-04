@@ -1,0 +1,69 @@
+/* MERIDIAN — Turkish */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Gösterge Paneli";
+"tab.scanner" = "İstihbarat Tarayıcısı";
+"tab.currency" = "Döviz";
+"tab.creative" = "Yaratıcı Arsenal";
+"tab.terminal" = "MQL Terminali";
+"tab.radar" = "Fırsat Radarı";
+"tab.settings" = "Ayarlar";
+
+/* Dashboard */
+"dashboard.title" = "Küresel İstihbarat";
+"dashboard.opportunities" = "Pazar Fırsatları";
+"dashboard.recentScans" = "Son Taramalar";
+
+/* Scanner */
+"scanner.placeholder" = "Taramak için alan adı veya URL girin";
+"scanner.scan" = "Tara";
+"scanner.traffic" = "Aylık Trafik";
+"scanner.competitors" = "En İyi Rakipler";
+"scanner.keywords" = "Anahtar Kelimeler";
+
+/* Currency */
+"currency.title" = "Döviz İstihbaratı";
+"currency.convert" = "Dönüştür";
+"currency.alert" = "Uyarı Ayarla";
+"currency.rate" = "Kur";
+"currency.change" = "Değişim";
+
+/* Creative */
+"creative.title" = "Yaratıcı Arsenal";
+"creative.generate" = "Yaratıcı Oluştur";
+"creative.style" = "Stil";
+"creative.language" = "Dil";
+"creative.platform" = "Platform";
+"creative.framework" = "Çerçeve";
+
+/* Terminal */
+"terminal.title" = "MQL Terminali";
+"terminal.placeholder" = "MQL sorgusu girin...";
+"terminal.run" = "Çalıştır";
+"terminal.example" = "Örnek Yükle";
+
+/* Radar */
+"radar.title" = "Fırsat Radarı";
+"radar.score" = "Puan";
+"radar.market" = "Pazar";
+"radar.geography" = "Coğrafya";
+
+/* Settings */
+"settings.title" = "Ayarlar";
+"settings.currency" = "Tercih Edilen Para Birimi";
+"settings.language" = "Dil";
+"settings.alerts" = "Uyarılar";
+"settings.about" = "MERIDIAN Hakkında";
+"settings.privacy" = "Gizlilik";
+
+/* Errors */
+"error.network" = "Ağ hatası. Lütfen tekrar deneyin.";
+"error.scan" = "Alan adı taranamıyor. Adresi kontrol edip tekrar deneyin.";
+"error.creative" = "Yaratıcı oluşturma başarısız oldu. Lütfen tekrar deneyin.";
+
+/* Onboarding */
+"onboarding.title" = "MERIDIAN'a Hoş Geldiniz";
+"onboarding.subtitle" = "Cebinizde küresel iş zekası";
+"onboarding.start" = "Başla";

@@ -1,0 +1,69 @@
+/* MERIDIAN — Hebrew (RTL) */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "לוח בקרה";
+"tab.scanner" = "סורק מודיעין";
+"tab.currency" = "מטבע";
+"tab.creative" = "ארסנל יצירתי";
+"tab.terminal" = "טרמינל MQL";
+"tab.radar" = "מכ\"מ הזדמנויות";
+"tab.settings" = "הגדרות";
+
+/* Dashboard */
+"dashboard.title" = "מודיעין עולמי";
+"dashboard.opportunities" = "הזדמנויות שוק";
+"dashboard.recentScans" = "סריקות אחרונות";
+
+/* Scanner */
+"scanner.placeholder" = "הזן דומיין או URL לסריקה";
+"scanner.scan" = "סרוק";
+"scanner.traffic" = "תנועה חודשית";
+"scanner.competitors" = "מתחרים מובילים";
+"scanner.keywords" = "מילות מפתח";
+
+/* Currency */
+"currency.title" = "מודיעין מטבע";
+"currency.convert" = "המר";
+"currency.alert" = "הגדר התראה";
+"currency.rate" = "שער";
+"currency.change" = "שינוי";
+
+/* Creative */
+"creative.title" = "ארסנל יצירתי";
+"creative.generate" = "צור קריאייטיב";
+"creative.style" = "סגנון";
+"creative.language" = "שפה";
+"creative.platform" = "פלטפורמה";
+"creative.framework" = "מסגרת";
+
+/* Terminal */
+"terminal.title" = "טרמינל MQL";
+"terminal.placeholder" = "הזן שאילתת MQL...";
+"terminal.run" = "הרץ";
+"terminal.example" = "טען דוגמה";
+
+/* Radar */
+"radar.title" = "מכ\"מ הזדמנויות";
+"radar.score" = "ציון";
+"radar.market" = "שוק";
+"radar.geography" = "גיאוגרפיה";
+
+/* Settings */
+"settings.title" = "הגדרות";
+"settings.currency" = "מטבע מועדף";
+"settings.language" = "שפה";
+"settings.alerts" = "התראות";
+"settings.about" = "אודות MERIDIAN";
+"settings.privacy" = "פרטיות";
+
+/* Errors */
+"error.network" = "שגיאת רשת. אנא נסה שוב.";
+"error.scan" = "לא ניתן לסרוק את הדומיין. בדוק את הכתובת ונסה שוב.";
+"error.creative" = "יצירת הקריאייטיב נכשלה. אנא נסה שוב.";
+
+/* Onboarding */
+"onboarding.title" = "ברוך הבא ל-MERIDIAN";
+"onboarding.subtitle" = "מודיעין עסקי עולמי בכיסך";
+"onboarding.start" = "התחל";

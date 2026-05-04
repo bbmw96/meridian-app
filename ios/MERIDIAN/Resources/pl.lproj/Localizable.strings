@@ -1,0 +1,69 @@
+/* MERIDIAN — Polish */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Panel";
+"tab.scanner" = "Skaner wywiadowczy";
+"tab.currency" = "Waluty";
+"tab.creative" = "Arsenał kreatywny";
+"tab.terminal" = "Terminal MQL";
+"tab.radar" = "Radar szans";
+"tab.settings" = "Ustawienia";
+
+/* Dashboard */
+"dashboard.title" = "Globalny wywiad";
+"dashboard.opportunities" = "Szanse rynkowe";
+"dashboard.recentScans" = "Ostatnie skany";
+
+/* Scanner */
+"scanner.placeholder" = "Wpisz domenę lub URL do skanowania";
+"scanner.scan" = "Skanuj";
+"scanner.traffic" = "Ruch miesięczny";
+"scanner.competitors" = "Główni konkurenci";
+"scanner.keywords" = "Słowa kluczowe";
+
+/* Currency */
+"currency.title" = "Wywiad walutowy";
+"currency.convert" = "Przelicz";
+"currency.alert" = "Ustaw alert";
+"currency.rate" = "Kurs";
+"currency.change" = "Zmiana";
+
+/* Creative */
+"creative.title" = "Arsenał kreatywny";
+"creative.generate" = "Generuj kreację";
+"creative.style" = "Styl";
+"creative.language" = "Język";
+"creative.platform" = "Platforma";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "Terminal MQL";
+"terminal.placeholder" = "Wpisz zapytanie MQL...";
+"terminal.run" = "Uruchom";
+"terminal.example" = "Wczytaj przykład";
+
+/* Radar */
+"radar.title" = "Radar szans";
+"radar.score" = "Wynik";
+"radar.market" = "Rynek";
+"radar.geography" = "Geografia";
+
+/* Settings */
+"settings.title" = "Ustawienia";
+"settings.currency" = "Preferowana waluta";
+"settings.language" = "Język";
+"settings.alerts" = "Alerty";
+"settings.about" = "O aplikacji MERIDIAN";
+"settings.privacy" = "Prywatność";
+
+/* Errors */
+"error.network" = "Błąd sieci. Spróbuj ponownie.";
+"error.scan" = "Nie można zeskanować domeny. Sprawdź adres i spróbuj ponownie.";
+"error.creative" = "Generowanie kreacji nie powiodło się. Spróbuj ponownie.";
+
+/* Onboarding */
+"onboarding.title" = "Witaj w MERIDIAN";
+"onboarding.subtitle" = "Globalny wywiad biznesowy w Twojej kieszeni";
+"onboarding.start" = "Rozpocznij";

@@ -1,0 +1,69 @@
+/* MERIDIAN — English (Base) */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Dashboard";
+"tab.scanner" = "Intelligence Scanner";
+"tab.currency" = "Currency";
+"tab.creative" = "Creative Arsenal";
+"tab.terminal" = "MQL Terminal";
+"tab.radar" = "Opportunity Radar";
+"tab.settings" = "Settings";
+
+/* Dashboard */
+"dashboard.title" = "Global Intelligence";
+"dashboard.opportunities" = "Market Opportunities";
+"dashboard.recentScans" = "Recent Scans";
+
+/* Scanner */
+"scanner.placeholder" = "Enter domain or URL to scan";
+"scanner.scan" = "Scan";
+"scanner.traffic" = "Monthly Traffic";
+"scanner.competitors" = "Top Competitors";
+"scanner.keywords" = "Keywords";
+
+/* Currency */
+"currency.title" = "Currency Intelligence";
+"currency.convert" = "Convert";
+"currency.alert" = "Set Alert";
+"currency.rate" = "Rate";
+"currency.change" = "Change";
+
+/* Creative */
+"creative.title" = "Creative Arsenal";
+"creative.generate" = "Generate Creative";
+"creative.style" = "Style";
+"creative.language" = "Language";
+"creative.platform" = "Platform";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "MQL Terminal";
+"terminal.placeholder" = "Enter MQL query...";
+"terminal.run" = "Run";
+"terminal.example" = "Load Example";
+
+/* Radar */
+"radar.title" = "Opportunity Radar";
+"radar.score" = "Score";
+"radar.market" = "Market";
+"radar.geography" = "Geography";
+
+/* Settings */
+"settings.title" = "Settings";
+"settings.currency" = "Preferred Currency";
+"settings.language" = "Language";
+"settings.alerts" = "Alerts";
+"settings.about" = "About MERIDIAN";
+"settings.privacy" = "Privacy";
+
+/* Errors */
+"error.network" = "Network error. Please try again.";
+"error.scan" = "Unable to scan domain. Check the address and try again.";
+"error.creative" = "Creative generation failed. Please try again.";
+
+/* Onboarding */
+"onboarding.title" = "Welcome to MERIDIAN";
+"onboarding.subtitle" = "Global Business Intelligence in your pocket";
+"onboarding.start" = "Get Started";

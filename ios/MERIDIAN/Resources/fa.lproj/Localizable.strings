@@ -1,0 +1,69 @@
+/* MERIDIAN — Persian/Farsi (RTL) */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "داشبورد";
+"tab.scanner" = "اسکنر اطلاعات";
+"tab.currency" = "ارز";
+"tab.creative" = "زرادخانه خلاق";
+"tab.terminal" = "ترمینال MQL";
+"tab.radar" = "رادار فرصت‌ها";
+"tab.settings" = "تنظیمات";
+
+/* Dashboard */
+"dashboard.title" = "اطلاعات جهانی";
+"dashboard.opportunities" = "فرصت‌های بازار";
+"dashboard.recentScans" = "اسکن‌های اخیر";
+
+/* Scanner */
+"scanner.placeholder" = "دامنه یا URL را برای اسکن وارد کنید";
+"scanner.scan" = "اسکن";
+"scanner.traffic" = "ترافیک ماهانه";
+"scanner.competitors" = "رقبای برتر";
+"scanner.keywords" = "کلمات کلیدی";
+
+/* Currency */
+"currency.title" = "اطلاعات ارزی";
+"currency.convert" = "تبدیل";
+"currency.alert" = "تنظیم هشدار";
+"currency.rate" = "نرخ";
+"currency.change" = "تغییر";
+
+/* Creative */
+"creative.title" = "زرادخانه خلاق";
+"creative.generate" = "تولید محتوای خلاق";
+"creative.style" = "سبک";
+"creative.language" = "زبان";
+"creative.platform" = "پلتفرم";
+"creative.framework" = "چارچوب";
+
+/* Terminal */
+"terminal.title" = "ترمینال MQL";
+"terminal.placeholder" = "پرس‌وجوی MQL را وارد کنید...";
+"terminal.run" = "اجرا";
+"terminal.example" = "بارگذاری مثال";
+
+/* Radar */
+"radar.title" = "رادار فرصت‌ها";
+"radar.score" = "امتیاز";
+"radar.market" = "بازار";
+"radar.geography" = "جغرافیا";
+
+/* Settings */
+"settings.title" = "تنظیمات";
+"settings.currency" = "ارز مورد نظر";
+"settings.language" = "زبان";
+"settings.alerts" = "هشدارها";
+"settings.about" = "درباره MERIDIAN";
+"settings.privacy" = "حریم خصوصی";
+
+/* Errors */
+"error.network" = "خطای شبکه. لطفاً دوباره امتحان کنید.";
+"error.scan" = "امکان اسکن دامنه وجود ندارد. آدرس را بررسی کرده و دوباره امتحان کنید.";
+"error.creative" = "تولید محتوای خلاق ناموفق بود. لطفاً دوباره امتحان کنید.";
+
+/* Onboarding */
+"onboarding.title" = "به MERIDIAN خوش آمدید";
+"onboarding.subtitle" = "اطلاعات تجاری جهانی در جیب شما";
+"onboarding.start" = "شروع";

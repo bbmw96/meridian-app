@@ -1,0 +1,69 @@
+/* MERIDIAN — Vietnamese */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Bảng điều khiển";
+"tab.scanner" = "Máy quét tình báo";
+"tab.currency" = "Tiền tệ";
+"tab.creative" = "Kho sáng tạo";
+"tab.terminal" = "Terminal MQL";
+"tab.radar" = "Radar cơ hội";
+"tab.settings" = "Cài đặt";
+
+/* Dashboard */
+"dashboard.title" = "Tình báo toàn cầu";
+"dashboard.opportunities" = "Cơ hội thị trường";
+"dashboard.recentScans" = "Quét gần đây";
+
+/* Scanner */
+"scanner.placeholder" = "Nhập tên miền hoặc URL để quét";
+"scanner.scan" = "Quét";
+"scanner.traffic" = "Lưu lượng hàng tháng";
+"scanner.competitors" = "Đối thủ hàng đầu";
+"scanner.keywords" = "Từ khóa";
+
+/* Currency */
+"currency.title" = "Tình báo tiền tệ";
+"currency.convert" = "Chuyển đổi";
+"currency.alert" = "Đặt cảnh báo";
+"currency.rate" = "Tỷ giá";
+"currency.change" = "Thay đổi";
+
+/* Creative */
+"creative.title" = "Kho sáng tạo";
+"creative.generate" = "Tạo nội dung sáng tạo";
+"creative.style" = "Phong cách";
+"creative.language" = "Ngôn ngữ";
+"creative.platform" = "Nền tảng";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "Terminal MQL";
+"terminal.placeholder" = "Nhập truy vấn MQL...";
+"terminal.run" = "Chạy";
+"terminal.example" = "Tải ví dụ";
+
+/* Radar */
+"radar.title" = "Radar cơ hội";
+"radar.score" = "Điểm số";
+"radar.market" = "Thị trường";
+"radar.geography" = "Địa lý";
+
+/* Settings */
+"settings.title" = "Cài đặt";
+"settings.currency" = "Đơn vị tiền tệ ưa thích";
+"settings.language" = "Ngôn ngữ";
+"settings.alerts" = "Cảnh báo";
+"settings.about" = "Giới thiệu về MERIDIAN";
+"settings.privacy" = "Quyền riêng tư";
+
+/* Errors */
+"error.network" = "Lỗi mạng. Vui lòng thử lại.";
+"error.scan" = "Không thể quét tên miền. Kiểm tra địa chỉ và thử lại.";
+"error.creative" = "Tạo nội dung sáng tạo thất bại. Vui lòng thử lại.";
+
+/* Onboarding */
+"onboarding.title" = "Chào mừng đến với MERIDIAN";
+"onboarding.subtitle" = "Tình báo kinh doanh toàn cầu trong túi của bạn";
+"onboarding.start" = "Bắt đầu";

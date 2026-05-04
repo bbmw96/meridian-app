@@ -1,0 +1,69 @@
+/* MERIDIAN — Dutch */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Dashboard";
+"tab.scanner" = "Intelligentiescanner";
+"tab.currency" = "Valuta";
+"tab.creative" = "Creatief Arsenaal";
+"tab.terminal" = "MQL-terminal";
+"tab.radar" = "Kansen-radar";
+"tab.settings" = "Instellingen";
+
+/* Dashboard */
+"dashboard.title" = "Mondiale Intelligentie";
+"dashboard.opportunities" = "Marktkansen";
+"dashboard.recentScans" = "Recente Scans";
+
+/* Scanner */
+"scanner.placeholder" = "Voer een domein of URL in om te scannen";
+"scanner.scan" = "Scannen";
+"scanner.traffic" = "Maandelijks verkeer";
+"scanner.competitors" = "Belangrijkste concurrenten";
+"scanner.keywords" = "Trefwoorden";
+
+/* Currency */
+"currency.title" = "Valuta-intelligentie";
+"currency.convert" = "Omrekenen";
+"currency.alert" = "Melding instellen";
+"currency.rate" = "Koers";
+"currency.change" = "Wijziging";
+
+/* Creative */
+"creative.title" = "Creatief Arsenaal";
+"creative.generate" = "Creatief genereren";
+"creative.style" = "Stijl";
+"creative.language" = "Taal";
+"creative.platform" = "Platform";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "MQL-terminal";
+"terminal.placeholder" = "Voer een MQL-query in...";
+"terminal.run" = "Uitvoeren";
+"terminal.example" = "Voorbeeld laden";
+
+/* Radar */
+"radar.title" = "Kansen-radar";
+"radar.score" = "Score";
+"radar.market" = "Markt";
+"radar.geography" = "Geografie";
+
+/* Settings */
+"settings.title" = "Instellingen";
+"settings.currency" = "Voorkeurvaluta";
+"settings.language" = "Taal";
+"settings.alerts" = "Meldingen";
+"settings.about" = "Over MERIDIAN";
+"settings.privacy" = "Privacy";
+
+/* Errors */
+"error.network" = "Netwerkfout. Probeer het opnieuw.";
+"error.scan" = "Kan domein niet scannen. Controleer het adres en probeer het opnieuw.";
+"error.creative" = "Genereren van creatief mislukt. Probeer het opnieuw.";
+
+/* Onboarding */
+"onboarding.title" = "Welkom bij MERIDIAN";
+"onboarding.subtitle" = "Mondiale bedrijfsintelligentie in uw zak";
+"onboarding.start" = "Aan de slag";

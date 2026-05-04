@@ -1,0 +1,69 @@
+/* MERIDIAN — Swedish */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Instrumentpanel";
+"tab.scanner" = "Underrättelseskanner";
+"tab.currency" = "Valuta";
+"tab.creative" = "Kreativt Arsenal";
+"tab.terminal" = "MQL-terminal";
+"tab.radar" = "Möjlighetsradar";
+"tab.settings" = "Inställningar";
+
+/* Dashboard */
+"dashboard.title" = "Global Underrättelse";
+"dashboard.opportunities" = "Marknadsmöjligheter";
+"dashboard.recentScans" = "Senaste skanningar";
+
+/* Scanner */
+"scanner.placeholder" = "Ange domän eller URL att skanna";
+"scanner.scan" = "Skanna";
+"scanner.traffic" = "Månatlig trafik";
+"scanner.competitors" = "Främsta konkurrenter";
+"scanner.keywords" = "Nyckelord";
+
+/* Currency */
+"currency.title" = "Valutaunderrättelse";
+"currency.convert" = "Konvertera";
+"currency.alert" = "Ställ in avisering";
+"currency.rate" = "Kurs";
+"currency.change" = "Förändring";
+
+/* Creative */
+"creative.title" = "Kreativt Arsenal";
+"creative.generate" = "Generera kreativ";
+"creative.style" = "Stil";
+"creative.language" = "Språk";
+"creative.platform" = "Plattform";
+"creative.framework" = "Ramverk";
+
+/* Terminal */
+"terminal.title" = "MQL-terminal";
+"terminal.placeholder" = "Ange MQL-fråga...";
+"terminal.run" = "Kör";
+"terminal.example" = "Ladda exempel";
+
+/* Radar */
+"radar.title" = "Möjlighetsradar";
+"radar.score" = "Poäng";
+"radar.market" = "Marknad";
+"radar.geography" = "Geografi";
+
+/* Settings */
+"settings.title" = "Inställningar";
+"settings.currency" = "Föredragen valuta";
+"settings.language" = "Språk";
+"settings.alerts" = "Aviseringar";
+"settings.about" = "Om MERIDIAN";
+"settings.privacy" = "Integritet";
+
+/* Errors */
+"error.network" = "Nätverksfel. Försök igen.";
+"error.scan" = "Det gick inte att skanna domänen. Kontrollera adressen och försök igen.";
+"error.creative" = "Det gick inte att generera kreativet. Försök igen.";
+
+/* Onboarding */
+"onboarding.title" = "Välkommen till MERIDIAN";
+"onboarding.subtitle" = "Global affärsintelligens i din ficka";
+"onboarding.start" = "Kom igång";

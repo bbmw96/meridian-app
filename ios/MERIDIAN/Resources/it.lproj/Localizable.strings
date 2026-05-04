@@ -1,0 +1,69 @@
+/* MERIDIAN — Italian */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Pannello";
+"tab.scanner" = "Scanner Intelligence";
+"tab.currency" = "Valute";
+"tab.creative" = "Arsenale Creativo";
+"tab.terminal" = "Terminale MQL";
+"tab.radar" = "Radar delle Opportunità";
+"tab.settings" = "Impostazioni";
+
+/* Dashboard */
+"dashboard.title" = "Intelligence Globale";
+"dashboard.opportunities" = "Opportunità di Mercato";
+"dashboard.recentScans" = "Scansioni Recenti";
+
+/* Scanner */
+"scanner.placeholder" = "Inserisci un dominio o URL da scansionare";
+"scanner.scan" = "Scansiona";
+"scanner.traffic" = "Traffico Mensile";
+"scanner.competitors" = "Principali Concorrenti";
+"scanner.keywords" = "Parole Chiave";
+
+/* Currency */
+"currency.title" = "Intelligence Valutaria";
+"currency.convert" = "Converti";
+"currency.alert" = "Imposta Avviso";
+"currency.rate" = "Tasso";
+"currency.change" = "Variazione";
+
+/* Creative */
+"creative.title" = "Arsenale Creativo";
+"creative.generate" = "Genera Creativo";
+"creative.style" = "Stile";
+"creative.language" = "Lingua";
+"creative.platform" = "Piattaforma";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "Terminale MQL";
+"terminal.placeholder" = "Inserisci una query MQL...";
+"terminal.run" = "Esegui";
+"terminal.example" = "Carica Esempio";
+
+/* Radar */
+"radar.title" = "Radar delle Opportunità";
+"radar.score" = "Punteggio";
+"radar.market" = "Mercato";
+"radar.geography" = "Geografia";
+
+/* Settings */
+"settings.title" = "Impostazioni";
+"settings.currency" = "Valuta Preferita";
+"settings.language" = "Lingua";
+"settings.alerts" = "Avvisi";
+"settings.about" = "Informazioni su MERIDIAN";
+"settings.privacy" = "Privacy";
+
+/* Errors */
+"error.network" = "Errore di rete. Riprova.";
+"error.scan" = "Impossibile scansionare il dominio. Controlla l'indirizzo e riprova.";
+"error.creative" = "Generazione del creativo fallita. Riprova.";
+
+/* Onboarding */
+"onboarding.title" = "Benvenuto in MERIDIAN";
+"onboarding.subtitle" = "Intelligence aziendale globale nella tua tasca";
+"onboarding.start" = "Inizia";

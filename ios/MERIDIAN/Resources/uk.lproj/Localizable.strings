@@ -1,0 +1,69 @@
+/* MERIDIAN — Ukrainian */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Панель";
+"tab.scanner" = "Сканер розвідки";
+"tab.currency" = "Валюта";
+"tab.creative" = "Творчий арсенал";
+"tab.terminal" = "Термінал MQL";
+"tab.radar" = "Радар можливостей";
+"tab.settings" = "Налаштування";
+
+/* Dashboard */
+"dashboard.title" = "Глобальна розвідка";
+"dashboard.opportunities" = "Ринкові можливості";
+"dashboard.recentScans" = "Останні сканування";
+
+/* Scanner */
+"scanner.placeholder" = "Введіть домен або URL для сканування";
+"scanner.scan" = "Сканувати";
+"scanner.traffic" = "Щомісячний трафік";
+"scanner.competitors" = "Головні конкуренти";
+"scanner.keywords" = "Ключові слова";
+
+/* Currency */
+"currency.title" = "Валютна розвідка";
+"currency.convert" = "Конвертувати";
+"currency.alert" = "Встановити сповіщення";
+"currency.rate" = "Курс";
+"currency.change" = "Зміна";
+
+/* Creative */
+"creative.title" = "Творчий арсенал";
+"creative.generate" = "Створити креатив";
+"creative.style" = "Стиль";
+"creative.language" = "Мова";
+"creative.platform" = "Платформа";
+"creative.framework" = "Фреймворк";
+
+/* Terminal */
+"terminal.title" = "Термінал MQL";
+"terminal.placeholder" = "Введіть MQL-запит...";
+"terminal.run" = "Запустити";
+"terminal.example" = "Завантажити приклад";
+
+/* Radar */
+"radar.title" = "Радар можливостей";
+"radar.score" = "Оцінка";
+"radar.market" = "Ринок";
+"radar.geography" = "Географія";
+
+/* Settings */
+"settings.title" = "Налаштування";
+"settings.currency" = "Бажана валюта";
+"settings.language" = "Мова";
+"settings.alerts" = "Сповіщення";
+"settings.about" = "Про застосунок MERIDIAN";
+"settings.privacy" = "Конфіденційність";
+
+/* Errors */
+"error.network" = "Помилка мережі. Будь ласка, спробуйте ще раз.";
+"error.scan" = "Не вдалося просканувати домен. Перевірте адресу та спробуйте ще раз.";
+"error.creative" = "Не вдалося згенерувати креатив. Будь ласка, спробуйте ще раз.";
+
+/* Onboarding */
+"onboarding.title" = "Ласкаво просимо до MERIDIAN";
+"onboarding.subtitle" = "Глобальна бізнес-розвідка у вашій кишені";
+"onboarding.start" = "Розпочати";

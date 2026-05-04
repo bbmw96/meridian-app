@@ -1,0 +1,69 @@
+/* MERIDIAN — Czech */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Přehled";
+"tab.scanner" = "Zpravodajský skener";
+"tab.currency" = "Měny";
+"tab.creative" = "Kreativní arsenal";
+"tab.terminal" = "Terminál MQL";
+"tab.radar" = "Radar příležitostí";
+"tab.settings" = "Nastavení";
+
+/* Dashboard */
+"dashboard.title" = "Globální zpravodajství";
+"dashboard.opportunities" = "Tržní příležitosti";
+"dashboard.recentScans" = "Nedávná skenování";
+
+/* Scanner */
+"scanner.placeholder" = "Zadejte doménu nebo URL ke skenování";
+"scanner.scan" = "Skenovat";
+"scanner.traffic" = "Měsíční návštěvnost";
+"scanner.competitors" = "Přední konkurenti";
+"scanner.keywords" = "Klíčová slova";
+
+/* Currency */
+"currency.title" = "Měnové zpravodajství";
+"currency.convert" = "Převést";
+"currency.alert" = "Nastavit upozornění";
+"currency.rate" = "Kurz";
+"currency.change" = "Změna";
+
+/* Creative */
+"creative.title" = "Kreativní arsenal";
+"creative.generate" = "Generovat kreativu";
+"creative.style" = "Styl";
+"creative.language" = "Jazyk";
+"creative.platform" = "Platforma";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "Terminál MQL";
+"terminal.placeholder" = "Zadejte dotaz MQL...";
+"terminal.run" = "Spustit";
+"terminal.example" = "Načíst příklad";
+
+/* Radar */
+"radar.title" = "Radar příležitostí";
+"radar.score" = "Skóre";
+"radar.market" = "Trh";
+"radar.geography" = "Geografie";
+
+/* Settings */
+"settings.title" = "Nastavení";
+"settings.currency" = "Preferovaná měna";
+"settings.language" = "Jazyk";
+"settings.alerts" = "Upozornění";
+"settings.about" = "O aplikaci MERIDIAN";
+"settings.privacy" = "Ochrana soukromí";
+
+/* Errors */
+"error.network" = "Chyba sítě. Zkuste to prosím znovu.";
+"error.scan" = "Doménu nelze oskenovat. Zkontrolujte adresu a zkuste to znovu.";
+"error.creative" = "Generování kreativy se nezdařilo. Zkuste to prosím znovu.";
+
+/* Onboarding */
+"onboarding.title" = "Vítejte v MERIDIAN";
+"onboarding.subtitle" = "Globální obchodní zpravodajství ve vaší kapse";
+"onboarding.start" = "Začít";

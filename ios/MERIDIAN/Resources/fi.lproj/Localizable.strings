@@ -1,0 +1,69 @@
+/* MERIDIAN — Finnish */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Kojelauta";
+"tab.scanner" = "Tiedusteluskannerl";
+"tab.currency" = "Valuutta";
+"tab.creative" = "Luova Arsenal";
+"tab.terminal" = "MQL-pääte";
+"tab.radar" = "Mahdollisuustutkain";
+"tab.settings" = "Asetukset";
+
+/* Dashboard */
+"dashboard.title" = "Globaali tiedustelu";
+"dashboard.opportunities" = "Markkinamahdollisuudet";
+"dashboard.recentScans" = "Viimeisimmät skannaukset";
+
+/* Scanner */
+"scanner.placeholder" = "Syötä toimialue tai URL skannausta varten";
+"scanner.scan" = "Skannaa";
+"scanner.traffic" = "Kuukausittainen liikenne";
+"scanner.competitors" = "Parhaat kilpailijat";
+"scanner.keywords" = "Avainsanat";
+
+/* Currency */
+"currency.title" = "Valuuttatiedustelu";
+"currency.convert" = "Muunna";
+"currency.alert" = "Aseta hälytys";
+"currency.rate" = "Kurssi";
+"currency.change" = "Muutos";
+
+/* Creative */
+"creative.title" = "Luova Arsenal";
+"creative.generate" = "Luo sisältö";
+"creative.style" = "Tyyli";
+"creative.language" = "Kieli";
+"creative.platform" = "Alusta";
+"creative.framework" = "Kehys";
+
+/* Terminal */
+"terminal.title" = "MQL-pääte";
+"terminal.placeholder" = "Syötä MQL-kysely...";
+"terminal.run" = "Suorita";
+"terminal.example" = "Lataa esimerkki";
+
+/* Radar */
+"radar.title" = "Mahdollisuustutkain";
+"radar.score" = "Pisteet";
+"radar.market" = "Markkina";
+"radar.geography" = "Maantiede";
+
+/* Settings */
+"settings.title" = "Asetukset";
+"settings.currency" = "Ensisijainen valuutta";
+"settings.language" = "Kieli";
+"settings.alerts" = "Hälytykset";
+"settings.about" = "Tietoa MERIDIANista";
+"settings.privacy" = "Yksityisyys";
+
+/* Errors */
+"error.network" = "Verkkovirhe. Yritä uudelleen.";
+"error.scan" = "Toimialuetta ei voi skannata. Tarkista osoite ja yritä uudelleen.";
+"error.creative" = "Sisällön luominen epäonnistui. Yritä uudelleen.";
+
+/* Onboarding */
+"onboarding.title" = "Tervetuloa MERIDIANiin";
+"onboarding.subtitle" = "Globaali liiketoimintatiedustelu taskussasi";
+"onboarding.start" = "Aloita";

@@ -1,0 +1,69 @@
+/* MERIDIAN — Korean */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "대시보드";
+"tab.scanner" = "인텔리전스 스캐너";
+"tab.currency" = "통화";
+"tab.creative" = "크리에이티브 아스날";
+"tab.terminal" = "MQL 터미널";
+"tab.radar" = "기회 레이더";
+"tab.settings" = "설정";
+
+/* Dashboard */
+"dashboard.title" = "글로벌 인텔리전스";
+"dashboard.opportunities" = "시장 기회";
+"dashboard.recentScans" = "최근 스캔";
+
+/* Scanner */
+"scanner.placeholder" = "스캔할 도메인 또는 URL 입력";
+"scanner.scan" = "스캔";
+"scanner.traffic" = "월간 트래픽";
+"scanner.competitors" = "주요 경쟁자";
+"scanner.keywords" = "키워드";
+
+/* Currency */
+"currency.title" = "통화 인텔리전스";
+"currency.convert" = "환전";
+"currency.alert" = "알림 설정";
+"currency.rate" = "환율";
+"currency.change" = "변동";
+
+/* Creative */
+"creative.title" = "크리에이티브 아스날";
+"creative.generate" = "크리에이티브 생성";
+"creative.style" = "스타일";
+"creative.language" = "언어";
+"creative.platform" = "플랫폼";
+"creative.framework" = "프레임워크";
+
+/* Terminal */
+"terminal.title" = "MQL 터미널";
+"terminal.placeholder" = "MQL 쿼리 입력...";
+"terminal.run" = "실행";
+"terminal.example" = "예제 불러오기";
+
+/* Radar */
+"radar.title" = "기회 레이더";
+"radar.score" = "점수";
+"radar.market" = "시장";
+"radar.geography" = "지역";
+
+/* Settings */
+"settings.title" = "설정";
+"settings.currency" = "선호 통화";
+"settings.language" = "언어";
+"settings.alerts" = "알림";
+"settings.about" = "MERIDIAN 정보";
+"settings.privacy" = "개인정보 처리방침";
+
+/* Errors */
+"error.network" = "네트워크 오류가 발생했습니다. 다시 시도해 주세요.";
+"error.scan" = "도메인을 스캔할 수 없습니다. 주소를 확인하고 다시 시도해 주세요.";
+"error.creative" = "크리에이티브 생성에 실패했습니다. 다시 시도해 주세요.";
+
+/* Onboarding */
+"onboarding.title" = "MERIDIAN에 오신 것을 환영합니다";
+"onboarding.subtitle" = "주머니 속의 글로벌 비즈니스 인텔리전스";
+"onboarding.start" = "시작하기";

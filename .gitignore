@@ -1,0 +1,102 @@
+# iOS / Xcode
+*.xcworkspace
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+Carthage/Build
+.build/
+Pods/
+*.resolved
+# Keep Package.resolved for reproducible builds
+!Package.resolved
+
+# Rust / Cargo
+target/
+Cargo.lock
+*.pdb
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+.env
+dist/
+*.egg-info/
+
+# Node / TypeScript
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+
+# Elixir
+_build/
+deps/
+*.beam
+*.ez
+erl_crash.dump
+.elixir_ls/
+
+# Go
+*.exe
+*.dll
+*.so
+*.dylib
+vendor/
+
+# Docker
+.docker/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+!terraform.tfvars.example
+.terraform.lock.hcl
+
+# Environment files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# ML model artefacts (stored in S3)
+*.pkl
+*.joblib
+*.h5
+*.onnx
+!models/.gitkeep
