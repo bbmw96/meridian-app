@@ -1,0 +1,69 @@
+/* MERIDIAN — Russian */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Панель";
+"tab.scanner" = "Сканер разведки";
+"tab.currency" = "Валюта";
+"tab.creative" = "Творческий арсенал";
+"tab.terminal" = "Терминал MQL";
+"tab.radar" = "Радар возможностей";
+"tab.settings" = "Настройки";
+
+/* Dashboard */
+"dashboard.title" = "Глобальная разведка";
+"dashboard.opportunities" = "Рыночные возможности";
+"dashboard.recentScans" = "Недавние сканирования";
+
+/* Scanner */
+"scanner.placeholder" = "Введите домен или URL для сканирования";
+"scanner.scan" = "Сканировать";
+"scanner.traffic" = "Ежемесячный трафик";
+"scanner.competitors" = "Главные конкуренты";
+"scanner.keywords" = "Ключевые слова";
+
+/* Currency */
+"currency.title" = "Валютная разведка";
+"currency.convert" = "Конвертировать";
+"currency.alert" = "Установить оповещение";
+"currency.rate" = "Курс";
+"currency.change" = "Изменение";
+
+/* Creative */
+"creative.title" = "Творческий арсенал";
+"creative.generate" = "Создать креатив";
+"creative.style" = "Стиль";
+"creative.language" = "Язык";
+"creative.platform" = "Платформа";
+"creative.framework" = "Фреймворк";
+
+/* Terminal */
+"terminal.title" = "Терминал MQL";
+"terminal.placeholder" = "Введите MQL-запрос...";
+"terminal.run" = "Запустить";
+"terminal.example" = "Загрузить пример";
+
+/* Radar */
+"radar.title" = "Радар возможностей";
+"radar.score" = "Оценка";
+"radar.market" = "Рынок";
+"radar.geography" = "География";
+
+/* Settings */
+"settings.title" = "Настройки";
+"settings.currency" = "Предпочтительная валюта";
+"settings.language" = "Язык";
+"settings.alerts" = "Оповещения";
+"settings.about" = "О приложении MERIDIAN";
+"settings.privacy" = "Конфиденциальность";
+
+/* Errors */
+"error.network" = "Ошибка сети. Пожалуйста, попробуйте снова.";
+"error.scan" = "Не удалось просканировать домен. Проверьте адрес и повторите попытку.";
+"error.creative" = "Ошибка генерации креатива. Пожалуйста, попробуйте снова.";
+
+/* Onboarding */
+"onboarding.title" = "Добро пожаловать в MERIDIAN";
+"onboarding.subtitle" = "Глобальная бизнес-разведка у вас в кармане";
+"onboarding.start" = "Начать";

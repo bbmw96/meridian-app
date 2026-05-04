@@ -1,0 +1,69 @@
+/* MERIDIAN — Romanian */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Panou de control";
+"tab.scanner" = "Scaner de informații";
+"tab.currency" = "Valute";
+"tab.creative" = "Arsenal Creativ";
+"tab.terminal" = "Terminal MQL";
+"tab.radar" = "Radar de oportunități";
+"tab.settings" = "Setări";
+
+/* Dashboard */
+"dashboard.title" = "Informații globale";
+"dashboard.opportunities" = "Oportunități de piață";
+"dashboard.recentScans" = "Scanări recente";
+
+/* Scanner */
+"scanner.placeholder" = "Introduceți un domeniu sau URL pentru scanare";
+"scanner.scan" = "Scanare";
+"scanner.traffic" = "Trafic lunar";
+"scanner.competitors" = "Principali concurenți";
+"scanner.keywords" = "Cuvinte cheie";
+
+/* Currency */
+"currency.title" = "Informații valutare";
+"currency.convert" = "Convertire";
+"currency.alert" = "Setare alertă";
+"currency.rate" = "Curs";
+"currency.change" = "Variație";
+
+/* Creative */
+"creative.title" = "Arsenal Creativ";
+"creative.generate" = "Generare creativ";
+"creative.style" = "Stil";
+"creative.language" = "Limbă";
+"creative.platform" = "Platformă";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "Terminal MQL";
+"terminal.placeholder" = "Introduceți o interogare MQL...";
+"terminal.run" = "Rulare";
+"terminal.example" = "Încărcare exemplu";
+
+/* Radar */
+"radar.title" = "Radar de oportunități";
+"radar.score" = "Scor";
+"radar.market" = "Piață";
+"radar.geography" = "Geografie";
+
+/* Settings */
+"settings.title" = "Setări";
+"settings.currency" = "Valuta preferată";
+"settings.language" = "Limbă";
+"settings.alerts" = "Alerte";
+"settings.about" = "Despre MERIDIAN";
+"settings.privacy" = "Confidențialitate";
+
+/* Errors */
+"error.network" = "Eroare de rețea. Vă rugăm să încercați din nou.";
+"error.scan" = "Imposibil de scanat domeniul. Verificați adresa și încercați din nou.";
+"error.creative" = "Generarea creativului a eșuat. Vă rugăm să încercați din nou.";
+
+/* Onboarding */
+"onboarding.title" = "Bun venit la MERIDIAN";
+"onboarding.subtitle" = "Informații de business globale în buzunarul dumneavoastră";
+"onboarding.start" = "Începeți";

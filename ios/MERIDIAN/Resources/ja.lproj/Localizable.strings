@@ -1,0 +1,69 @@
+/* MERIDIAN — Japanese */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "ダッシュボード";
+"tab.scanner" = "インテリジェンス スキャナー";
+"tab.currency" = "通貨";
+"tab.creative" = "クリエイティブ アーセナル";
+"tab.terminal" = "MQL ターミナル";
+"tab.radar" = "オポチュニティ レーダー";
+"tab.settings" = "設定";
+
+/* Dashboard */
+"dashboard.title" = "グローバル インテリジェンス";
+"dashboard.opportunities" = "市場機会";
+"dashboard.recentScans" = "最近のスキャン";
+
+/* Scanner */
+"scanner.placeholder" = "スキャンするドメインまたは URL を入力";
+"scanner.scan" = "スキャン";
+"scanner.traffic" = "月間トラフィック";
+"scanner.competitors" = "主要競合他社";
+"scanner.keywords" = "キーワード";
+
+/* Currency */
+"currency.title" = "通貨インテリジェンス";
+"currency.convert" = "換算";
+"currency.alert" = "アラート設定";
+"currency.rate" = "レート";
+"currency.change" = "変動";
+
+/* Creative */
+"creative.title" = "クリエイティブ アーセナル";
+"creative.generate" = "クリエイティブ生成";
+"creative.style" = "スタイル";
+"creative.language" = "言語";
+"creative.platform" = "プラットフォーム";
+"creative.framework" = "フレームワーク";
+
+/* Terminal */
+"terminal.title" = "MQL ターミナル";
+"terminal.placeholder" = "MQL クエリを入力...";
+"terminal.run" = "実行";
+"terminal.example" = "サンプルを読み込む";
+
+/* Radar */
+"radar.title" = "オポチュニティ レーダー";
+"radar.score" = "スコア";
+"radar.market" = "マーケット";
+"radar.geography" = "地域";
+
+/* Settings */
+"settings.title" = "設定";
+"settings.currency" = "優先通貨";
+"settings.language" = "言語";
+"settings.alerts" = "アラート";
+"settings.about" = "MERIDIAN について";
+"settings.privacy" = "プライバシー";
+
+/* Errors */
+"error.network" = "ネットワークエラーが発生しました。もう一度お試しください。";
+"error.scan" = "ドメインをスキャンできません。アドレスを確認してもう一度お試しください。";
+"error.creative" = "クリエイティブの生成に失敗しました。もう一度お試しください。";
+
+/* Onboarding */
+"onboarding.title" = "MERIDIAN へようこそ";
+"onboarding.subtitle" = "グローバルなビジネスインテリジェンスをあなたのポケットに";
+"onboarding.start" = "はじめる";

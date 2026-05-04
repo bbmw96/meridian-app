@@ -1,0 +1,69 @@
+/* MERIDIAN — Hungarian */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Vezérlőpult";
+"tab.scanner" = "Hírszerzési szkenner";
+"tab.currency" = "Deviza";
+"tab.creative" = "Kreatív arzenál";
+"tab.terminal" = "MQL terminál";
+"tab.radar" = "Lehetőség-radar";
+"tab.settings" = "Beállítások";
+
+/* Dashboard */
+"dashboard.title" = "Globális hírszerzés";
+"dashboard.opportunities" = "Piaci lehetőségek";
+"dashboard.recentScans" = "Legutóbbi szkennelések";
+
+/* Scanner */
+"scanner.placeholder" = "Adjon meg egy domaint vagy URL-t a szkenneléshez";
+"scanner.scan" = "Szkennelés";
+"scanner.traffic" = "Havi forgalom";
+"scanner.competitors" = "Legfőbb versenytársak";
+"scanner.keywords" = "Kulcsszavak";
+
+/* Currency */
+"currency.title" = "Devizahírszerzés";
+"currency.convert" = "Átváltás";
+"currency.alert" = "Értesítés beállítása";
+"currency.rate" = "Árfolyam";
+"currency.change" = "Változás";
+
+/* Creative */
+"creative.title" = "Kreatív arzenál";
+"creative.generate" = "Kreatív generálása";
+"creative.style" = "Stílus";
+"creative.language" = "Nyelv";
+"creative.platform" = "Platform";
+"creative.framework" = "Keretrendszer";
+
+/* Terminal */
+"terminal.title" = "MQL terminál";
+"terminal.placeholder" = "Írjon be MQL lekérdezést...";
+"terminal.run" = "Futtatás";
+"terminal.example" = "Példa betöltése";
+
+/* Radar */
+"radar.title" = "Lehetőség-radar";
+"radar.score" = "Pontszám";
+"radar.market" = "Piac";
+"radar.geography" = "Földrajz";
+
+/* Settings */
+"settings.title" = "Beállítások";
+"settings.currency" = "Preferált deviza";
+"settings.language" = "Nyelv";
+"settings.alerts" = "Értesítések";
+"settings.about" = "A MERIDIAN névjegye";
+"settings.privacy" = "Adatvédelem";
+
+/* Errors */
+"error.network" = "Hálózati hiba. Kérjük, próbálja újra.";
+"error.scan" = "Nem sikerült szkennelni a domaint. Ellenőrizze a címet, és próbálja újra.";
+"error.creative" = "A kreatív generálása nem sikerült. Kérjük, próbálja újra.";
+
+/* Onboarding */
+"onboarding.title" = "Üdvözöljük a MERIDIAN-ban";
+"onboarding.subtitle" = "Globális üzleti hírszerzés a zsebében";
+"onboarding.start" = "Kezdés";

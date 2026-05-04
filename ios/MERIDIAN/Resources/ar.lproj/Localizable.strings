@@ -1,0 +1,69 @@
+/* MERIDIAN — Arabic (RTL) */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "لوحة التحكم";
+"tab.scanner" = "ماسح الاستخبارات";
+"tab.currency" = "العملة";
+"tab.creative" = "الترسانة الإبداعية";
+"tab.terminal" = "طرفية MQL";
+"tab.radar" = "رادار الفرص";
+"tab.settings" = "الإعدادات";
+
+/* Dashboard */
+"dashboard.title" = "الاستخبارات العالمية";
+"dashboard.opportunities" = "فرص السوق";
+"dashboard.recentScans" = "عمليات المسح الأخيرة";
+
+/* Scanner */
+"scanner.placeholder" = "أدخل النطاق أو الرابط للمسح";
+"scanner.scan" = "مسح";
+"scanner.traffic" = "الزيارات الشهرية";
+"scanner.competitors" = "أبرز المنافسين";
+"scanner.keywords" = "الكلمات المفتاحية";
+
+/* Currency */
+"currency.title" = "استخبارات العملة";
+"currency.convert" = "تحويل";
+"currency.alert" = "ضبط تنبيه";
+"currency.rate" = "السعر";
+"currency.change" = "التغيير";
+
+/* Creative */
+"creative.title" = "الترسانة الإبداعية";
+"creative.generate" = "توليد محتوى إبداعي";
+"creative.style" = "الأسلوب";
+"creative.language" = "اللغة";
+"creative.platform" = "المنصة";
+"creative.framework" = "الإطار";
+
+/* Terminal */
+"terminal.title" = "طرفية MQL";
+"terminal.placeholder" = "أدخل استعلام MQL...";
+"terminal.run" = "تشغيل";
+"terminal.example" = "تحميل مثال";
+
+/* Radar */
+"radar.title" = "رادار الفرص";
+"radar.score" = "النقاط";
+"radar.market" = "السوق";
+"radar.geography" = "الجغرافيا";
+
+/* Settings */
+"settings.title" = "الإعدادات";
+"settings.currency" = "العملة المفضلة";
+"settings.language" = "اللغة";
+"settings.alerts" = "التنبيهات";
+"settings.about" = "حول MERIDIAN";
+"settings.privacy" = "الخصوصية";
+
+/* Errors */
+"error.network" = "خطأ في الشبكة. يرجى المحاولة مجدداً.";
+"error.scan" = "تعذّر مسح النطاق. تحقق من العنوان وحاول مجدداً.";
+"error.creative" = "فشل توليد المحتوى الإبداعي. يرجى المحاولة مجدداً.";
+
+/* Onboarding */
+"onboarding.title" = "مرحباً بك في MERIDIAN";
+"onboarding.subtitle" = "الاستخبارات التجارية العالمية في جيبك";
+"onboarding.start" = "ابدأ الآن";

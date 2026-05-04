@@ -1,0 +1,69 @@
+/* MERIDIAN — Norwegian (Bokmal) */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Instrumentbord";
+"tab.scanner" = "Etterretningsskanner";
+"tab.currency" = "Valuta";
+"tab.creative" = "Kreativt Arsenal";
+"tab.terminal" = "MQL-terminal";
+"tab.radar" = "Mulighetsr";
+"tab.settings" = "Innstillinger";
+
+/* Dashboard */
+"dashboard.title" = "Global Etterretning";
+"dashboard.opportunities" = "Markedsmuligheter";
+"dashboard.recentScans" = "Siste skanninger";
+
+/* Scanner */
+"scanner.placeholder" = "Skriv inn domene eller URL for skanning";
+"scanner.scan" = "Skann";
+"scanner.traffic" = "Månedlig trafikk";
+"scanner.competitors" = "Toppkonkurrenter";
+"scanner.keywords" = "Nøkkelord";
+
+/* Currency */
+"currency.title" = "Valutaetterretning";
+"currency.convert" = "Konverter";
+"currency.alert" = "Sett varsel";
+"currency.rate" = "Kurs";
+"currency.change" = "Endring";
+
+/* Creative */
+"creative.title" = "Kreativt Arsenal";
+"creative.generate" = "Generer kreativ";
+"creative.style" = "Stil";
+"creative.language" = "Språk";
+"creative.platform" = "Plattform";
+"creative.framework" = "Rammeverk";
+
+/* Terminal */
+"terminal.title" = "MQL-terminal";
+"terminal.placeholder" = "Skriv inn MQL-spørring...";
+"terminal.run" = "Kjør";
+"terminal.example" = "Last eksempel";
+
+/* Radar */
+"radar.title" = "Mulighetsradar";
+"radar.score" = "Poengsum";
+"radar.market" = "Marked";
+"radar.geography" = "Geografi";
+
+/* Settings */
+"settings.title" = "Innstillinger";
+"settings.currency" = "Foretrukket valuta";
+"settings.language" = "Språk";
+"settings.alerts" = "Varsler";
+"settings.about" = "Om MERIDIAN";
+"settings.privacy" = "Personvern";
+
+/* Errors */
+"error.network" = "Nettverksfeil. Vennligst prøv igjen.";
+"error.scan" = "Kan ikke skanne domenet. Sjekk adressen og prøv igjen.";
+"error.creative" = "Generering av kreativt innhold mislyktes. Vennligst prøv igjen.";
+
+/* Onboarding */
+"onboarding.title" = "Velkommen til MERIDIAN";
+"onboarding.subtitle" = "Global forretningsetterretning i lommen din";
+"onboarding.start" = "Kom i gang";

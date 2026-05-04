@@ -1,0 +1,69 @@
+/* MERIDIAN — Simplified Chinese */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "仪表盘";
+"tab.scanner" = "情报扫描器";
+"tab.currency" = "货币";
+"tab.creative" = "创意武器库";
+"tab.terminal" = "MQL 终端";
+"tab.radar" = "机会雷达";
+"tab.settings" = "设置";
+
+/* Dashboard */
+"dashboard.title" = "全球情报";
+"dashboard.opportunities" = "市场机会";
+"dashboard.recentScans" = "最近扫描";
+
+/* Scanner */
+"scanner.placeholder" = "输入域名或网址以进行扫描";
+"scanner.scan" = "扫描";
+"scanner.traffic" = "月流量";
+"scanner.competitors" = "主要竞争对手";
+"scanner.keywords" = "关键词";
+
+/* Currency */
+"currency.title" = "货币情报";
+"currency.convert" = "兑换";
+"currency.alert" = "设置提醒";
+"currency.rate" = "汇率";
+"currency.change" = "变动";
+
+/* Creative */
+"creative.title" = "创意武器库";
+"creative.generate" = "生成创意内容";
+"creative.style" = "风格";
+"creative.language" = "语言";
+"creative.platform" = "平台";
+"creative.framework" = "框架";
+
+/* Terminal */
+"terminal.title" = "MQL 终端";
+"terminal.placeholder" = "输入 MQL 查询...";
+"terminal.run" = "运行";
+"terminal.example" = "加载示例";
+
+/* Radar */
+"radar.title" = "机会雷达";
+"radar.score" = "评分";
+"radar.market" = "市场";
+"radar.geography" = "地理位置";
+
+/* Settings */
+"settings.title" = "设置";
+"settings.currency" = "首选货币";
+"settings.language" = "语言";
+"settings.alerts" = "提醒";
+"settings.about" = "关于 MERIDIAN";
+"settings.privacy" = "隐私";
+
+/* Errors */
+"error.network" = "网络错误，请重试。";
+"error.scan" = "无法扫描该域名，请检查地址后重试。";
+"error.creative" = "创意生成失败，请重试。";
+
+/* Onboarding */
+"onboarding.title" = "欢迎使用 MERIDIAN";
+"onboarding.subtitle" = "随身携带的全球商业情报";
+"onboarding.start" = "立即开始";

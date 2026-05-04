@@ -1,0 +1,69 @@
+/* MERIDIAN — French */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Tableau de bord";
+"tab.scanner" = "Scanner Intelligence";
+"tab.currency" = "Devises";
+"tab.creative" = "Arsenal Créatif";
+"tab.terminal" = "Terminal MQL";
+"tab.radar" = "Radar des Opportunités";
+"tab.settings" = "Paramètres";
+
+/* Dashboard */
+"dashboard.title" = "Intelligence Mondiale";
+"dashboard.opportunities" = "Opportunités de Marché";
+"dashboard.recentScans" = "Analyses Récentes";
+
+/* Scanner */
+"scanner.placeholder" = "Saisir un domaine ou une URL à analyser";
+"scanner.scan" = "Analyser";
+"scanner.traffic" = "Trafic Mensuel";
+"scanner.competitors" = "Principaux Concurrents";
+"scanner.keywords" = "Mots-clés";
+
+/* Currency */
+"currency.title" = "Intelligence des Devises";
+"currency.convert" = "Convertir";
+"currency.alert" = "Créer une Alerte";
+"currency.rate" = "Taux";
+"currency.change" = "Variation";
+
+/* Creative */
+"creative.title" = "Arsenal Créatif";
+"creative.generate" = "Générer un Créatif";
+"creative.style" = "Style";
+"creative.language" = "Langue";
+"creative.platform" = "Plateforme";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "Terminal MQL";
+"terminal.placeholder" = "Saisir une requête MQL...";
+"terminal.run" = "Exécuter";
+"terminal.example" = "Charger un Exemple";
+
+/* Radar */
+"radar.title" = "Radar des Opportunités";
+"radar.score" = "Score";
+"radar.market" = "Marché";
+"radar.geography" = "Géographie";
+
+/* Settings */
+"settings.title" = "Paramètres";
+"settings.currency" = "Devise Préférée";
+"settings.language" = "Langue";
+"settings.alerts" = "Alertes";
+"settings.about" = "À propos de MERIDIAN";
+"settings.privacy" = "Confidentialité";
+
+/* Errors */
+"error.network" = "Erreur réseau. Veuillez réessayer.";
+"error.scan" = "Impossible d'analyser le domaine. Vérifiez l'adresse et réessayez.";
+"error.creative" = "La génération du créatif a échoué. Veuillez réessayer.";
+
+/* Onboarding */
+"onboarding.title" = "Bienvenue sur MERIDIAN";
+"onboarding.subtitle" = "L'intelligence économique mondiale dans votre poche";
+"onboarding.start" = "Commencer";

@@ -1,0 +1,69 @@
+/* MERIDIAN — Traditional Chinese */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "儀表板";
+"tab.scanner" = "情報掃描器";
+"tab.currency" = "貨幣";
+"tab.creative" = "創意武器庫";
+"tab.terminal" = "MQL 終端機";
+"tab.radar" = "機會雷達";
+"tab.settings" = "設定";
+
+/* Dashboard */
+"dashboard.title" = "全球情報";
+"dashboard.opportunities" = "市場機會";
+"dashboard.recentScans" = "最近掃描";
+
+/* Scanner */
+"scanner.placeholder" = "輸入網域或網址以進行掃描";
+"scanner.scan" = "掃描";
+"scanner.traffic" = "月流量";
+"scanner.competitors" = "主要競爭對手";
+"scanner.keywords" = "關鍵字";
+
+/* Currency */
+"currency.title" = "貨幣情報";
+"currency.convert" = "兌換";
+"currency.alert" = "設定提醒";
+"currency.rate" = "匯率";
+"currency.change" = "變動";
+
+/* Creative */
+"creative.title" = "創意武器庫";
+"creative.generate" = "生成創意內容";
+"creative.style" = "風格";
+"creative.language" = "語言";
+"creative.platform" = "平台";
+"creative.framework" = "框架";
+
+/* Terminal */
+"terminal.title" = "MQL 終端機";
+"terminal.placeholder" = "輸入 MQL 查詢...";
+"terminal.run" = "執行";
+"terminal.example" = "載入範例";
+
+/* Radar */
+"radar.title" = "機會雷達";
+"radar.score" = "評分";
+"radar.market" = "市場";
+"radar.geography" = "地理位置";
+
+/* Settings */
+"settings.title" = "設定";
+"settings.currency" = "慣用貨幣";
+"settings.language" = "語言";
+"settings.alerts" = "提醒";
+"settings.about" = "關於 MERIDIAN";
+"settings.privacy" = "隱私權";
+
+/* Errors */
+"error.network" = "網路錯誤，請重試。";
+"error.scan" = "無法掃描該網域，請確認地址後重試。";
+"error.creative" = "創意生成失敗，請重試。";
+
+/* Onboarding */
+"onboarding.title" = "歡迎使用 MERIDIAN";
+"onboarding.subtitle" = "隨身攜帶的全球商業情報";
+"onboarding.start" = "立即開始";

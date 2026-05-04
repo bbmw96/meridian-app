@@ -1,0 +1,69 @@
+/* MERIDIAN — Danish */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Instrumentbræt";
+"tab.scanner" = "Efterretningsscanner";
+"tab.currency" = "Valuta";
+"tab.creative" = "Kreativt Arsenal";
+"tab.terminal" = "MQL-terminal";
+"tab.radar" = "Muligheds-radar";
+"tab.settings" = "Indstillinger";
+
+/* Dashboard */
+"dashboard.title" = "Global Efterretning";
+"dashboard.opportunities" = "Markedsmuligheder";
+"dashboard.recentScans" = "Seneste scanninger";
+
+/* Scanner */
+"scanner.placeholder" = "Indtast domæne eller URL for at scanne";
+"scanner.scan" = "Scan";
+"scanner.traffic" = "Månedlig trafik";
+"scanner.competitors" = "Topkonkurrenter";
+"scanner.keywords" = "Søgeord";
+
+/* Currency */
+"currency.title" = "Valutaefteret";
+"currency.convert" = "Konverter";
+"currency.alert" = "Indstil alarm";
+"currency.rate" = "Kurs";
+"currency.change" = "Ændring";
+
+/* Creative */
+"creative.title" = "Kreativt Arsenal";
+"creative.generate" = "Generer kreativ";
+"creative.style" = "Stil";
+"creative.language" = "Sprog";
+"creative.platform" = "Platform";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "MQL-terminal";
+"terminal.placeholder" = "Indtast MQL-forespørgsel...";
+"terminal.run" = "Kør";
+"terminal.example" = "Indlæs eksempel";
+
+/* Radar */
+"radar.title" = "Muligheds-radar";
+"radar.score" = "Score";
+"radar.market" = "Marked";
+"radar.geography" = "Geografi";
+
+/* Settings */
+"settings.title" = "Indstillinger";
+"settings.currency" = "Foretrukken valuta";
+"settings.language" = "Sprog";
+"settings.alerts" = "Alarmer";
+"settings.about" = "Om MERIDIAN";
+"settings.privacy" = "Privatliv";
+
+/* Errors */
+"error.network" = "Netværksfejl. Prøv venligst igen.";
+"error.scan" = "Kan ikke scanne domænet. Kontrollér adressen og prøv igen.";
+"error.creative" = "Generering af kreativt mislykkedes. Prøv venligst igen.";
+
+/* Onboarding */
+"onboarding.title" = "Velkommen til MERIDIAN";
+"onboarding.subtitle" = "Global forretningsefteret i din lomme";
+"onboarding.start" = "Kom i gang";

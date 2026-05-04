@@ -1,0 +1,69 @@
+/* MERIDIAN — German */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Dashboard";
+"tab.scanner" = "Intelligence-Scanner";
+"tab.currency" = "Währungen";
+"tab.creative" = "Kreativ-Arsenal";
+"tab.terminal" = "MQL-Terminal";
+"tab.radar" = "Chancen-Radar";
+"tab.settings" = "Einstellungen";
+
+/* Dashboard */
+"dashboard.title" = "Globale Intelligenz";
+"dashboard.opportunities" = "Marktchancen";
+"dashboard.recentScans" = "Letzte Scans";
+
+/* Scanner */
+"scanner.placeholder" = "Domain oder URL zum Scannen eingeben";
+"scanner.scan" = "Scannen";
+"scanner.traffic" = "Monatlicher Traffic";
+"scanner.competitors" = "Top-Wettbewerber";
+"scanner.keywords" = "Keywords";
+
+/* Currency */
+"currency.title" = "Währungs-Intelligenz";
+"currency.convert" = "Umrechnen";
+"currency.alert" = "Alarm einrichten";
+"currency.rate" = "Kurs";
+"currency.change" = "Änderung";
+
+/* Creative */
+"creative.title" = "Kreativ-Arsenal";
+"creative.generate" = "Kreativ generieren";
+"creative.style" = "Stil";
+"creative.language" = "Sprache";
+"creative.platform" = "Plattform";
+"creative.framework" = "Framework";
+
+/* Terminal */
+"terminal.title" = "MQL-Terminal";
+"terminal.placeholder" = "MQL-Abfrage eingeben...";
+"terminal.run" = "Ausführen";
+"terminal.example" = "Beispiel laden";
+
+/* Radar */
+"radar.title" = "Chancen-Radar";
+"radar.score" = "Bewertung";
+"radar.market" = "Markt";
+"radar.geography" = "Geografie";
+
+/* Settings */
+"settings.title" = "Einstellungen";
+"settings.currency" = "Bevorzugte Währung";
+"settings.language" = "Sprache";
+"settings.alerts" = "Benachrichtigungen";
+"settings.about" = "Über MERIDIAN";
+"settings.privacy" = "Datenschutz";
+
+/* Errors */
+"error.network" = "Netzwerkfehler. Bitte versuche es erneut.";
+"error.scan" = "Domain kann nicht gescannt werden. Adresse prüfen und erneut versuchen.";
+"error.creative" = "Kreativ-Generierung fehlgeschlagen. Bitte versuche es erneut.";
+
+/* Onboarding */
+"onboarding.title" = "Willkommen bei MERIDIAN";
+"onboarding.subtitle" = "Globale Business-Intelligence in deiner Tasche";
+"onboarding.start" = "Loslegen";

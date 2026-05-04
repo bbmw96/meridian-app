@@ -1,0 +1,69 @@
+/* MERIDIAN — Malay */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Papan Pemuka";
+"tab.scanner" = "Pengimbas Perisikan";
+"tab.currency" = "Mata Wang";
+"tab.creative" = "Arsenal Kreatif";
+"tab.terminal" = "Terminal MQL";
+"tab.radar" = "Radar Peluang";
+"tab.settings" = "Tetapan";
+
+/* Dashboard */
+"dashboard.title" = "Perisikan Global";
+"dashboard.opportunities" = "Peluang Pasaran";
+"dashboard.recentScans" = "Pengimbasan Terkini";
+
+/* Scanner */
+"scanner.placeholder" = "Masukkan domain atau URL untuk diimbas";
+"scanner.scan" = "Imbas";
+"scanner.traffic" = "Trafik Bulanan";
+"scanner.competitors" = "Pesaing Teratas";
+"scanner.keywords" = "Kata Kunci";
+
+/* Currency */
+"currency.title" = "Perisikan Mata Wang";
+"currency.convert" = "Tukar";
+"currency.alert" = "Tetapkan Amaran";
+"currency.rate" = "Kadar";
+"currency.change" = "Perubahan";
+
+/* Creative */
+"creative.title" = "Arsenal Kreatif";
+"creative.generate" = "Jana Kreatif";
+"creative.style" = "Gaya";
+"creative.language" = "Bahasa";
+"creative.platform" = "Platform";
+"creative.framework" = "Rangka Kerja";
+
+/* Terminal */
+"terminal.title" = "Terminal MQL";
+"terminal.placeholder" = "Masukkan pertanyaan MQL...";
+"terminal.run" = "Jalankan";
+"terminal.example" = "Muat Contoh";
+
+/* Radar */
+"radar.title" = "Radar Peluang";
+"radar.score" = "Skor";
+"radar.market" = "Pasaran";
+"radar.geography" = "Geografi";
+
+/* Settings */
+"settings.title" = "Tetapan";
+"settings.currency" = "Mata Wang Pilihan";
+"settings.language" = "Bahasa";
+"settings.alerts" = "Amaran";
+"settings.about" = "Tentang MERIDIAN";
+"settings.privacy" = "Privasi";
+
+/* Errors */
+"error.network" = "Ralat rangkaian. Sila cuba lagi.";
+"error.scan" = "Tidak dapat mengimbas domain. Semak alamat dan cuba lagi.";
+"error.creative" = "Penjanaan kreatif gagal. Sila cuba lagi.";
+
+/* Onboarding */
+"onboarding.title" = "Selamat Datang ke MERIDIAN";
+"onboarding.subtitle" = "Perisikan perniagaan global di poket anda";
+"onboarding.start" = "Mulakan";

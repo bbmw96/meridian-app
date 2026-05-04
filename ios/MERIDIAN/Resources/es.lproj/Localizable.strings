@@ -1,0 +1,69 @@
+/* MERIDIAN — Spanish */
+
+"app.name" = "MERIDIAN";
+
+/* Tabs */
+"tab.dashboard" = "Panel";
+"tab.scanner" = "Escáner de Inteligencia";
+"tab.currency" = "Divisas";
+"tab.creative" = "Arsenal Creativo";
+"tab.terminal" = "Terminal MQL";
+"tab.radar" = "Radar de Oportunidades";
+"tab.settings" = "Ajustes";
+
+/* Dashboard */
+"dashboard.title" = "Inteligencia Global";
+"dashboard.opportunities" = "Oportunidades de Mercado";
+"dashboard.recentScans" = "Análisis Recientes";
+
+/* Scanner */
+"scanner.placeholder" = "Introduce un dominio o URL para analizar";
+"scanner.scan" = "Analizar";
+"scanner.traffic" = "Tráfico Mensual";
+"scanner.competitors" = "Principales Competidores";
+"scanner.keywords" = "Palabras Clave";
+
+/* Currency */
+"currency.title" = "Inteligencia de Divisas";
+"currency.convert" = "Convertir";
+"currency.alert" = "Crear Alerta";
+"currency.rate" = "Tipo de Cambio";
+"currency.change" = "Variación";
+
+/* Creative */
+"creative.title" = "Arsenal Creativo";
+"creative.generate" = "Generar Creativo";
+"creative.style" = "Estilo";
+"creative.language" = "Idioma";
+"creative.platform" = "Plataforma";
+"creative.framework" = "Marco";
+
+/* Terminal */
+"terminal.title" = "Terminal MQL";
+"terminal.placeholder" = "Introduce una consulta MQL...";
+"terminal.run" = "Ejecutar";
+"terminal.example" = "Cargar Ejemplo";
+
+/* Radar */
+"radar.title" = "Radar de Oportunidades";
+"radar.score" = "Puntuación";
+"radar.market" = "Mercado";
+"radar.geography" = "Geografía";
+
+/* Settings */
+"settings.title" = "Ajustes";
+"settings.currency" = "Divisa Preferida";
+"settings.language" = "Idioma";
+"settings.alerts" = "Alertas";
+"settings.about" = "Acerca de MERIDIAN";
+"settings.privacy" = "Privacidad";
+
+/* Errors */
+"error.network" = "Error de red. Por favor, inténtalo de nuevo.";
+"error.scan" = "No se puede analizar el dominio. Comprueba la dirección e inténtalo de nuevo.";
+"error.creative" = "Error al generar el creativo. Por favor, inténtalo de nuevo.";
+
+/* Onboarding */
+"onboarding.title" = "Bienvenido a MERIDIAN";
+"onboarding.subtitle" = "Inteligencia empresarial global en tu bolsillo";
+"onboarding.start" = "Comenzar";
