@@ -232,9 +232,19 @@ impl<'a> Lexer<'a> {
             }
         }
 
-        // Check keywords (case-sensitive uppercase first, then lowercase for bool)
+        // Boolean literals are case-sensitive; all other MQL keywords are case-insensitive.
+        if s == "true" {
+            return Token::BoolTrue;
+        }
+        if s == "false" {
+            return Token::BoolFalse;
+        }
+        let upper = s.to_uppercase();
         for &(kw, ref tok) in KEYWORDS {
-            if s == kw {
+            if kw == "true" || kw == "false" {
+                continue;
+            }
+            if upper == kw {
                 return tok.clone();
             }
         }

@@ -159,6 +159,44 @@ class OpportunityEngine:
         opportunities.sort(key=lambda o: o.score, reverse=True)
         return opportunities[: filters.max_results]
 
+    def _score(
+        self,
+        traffic_gap: float,
+        fx_stability: float,
+        competitor_weakness: float,
+        market_growth: float,
+    ) -> float:
+        raw = (
+            traffic_gap * 0.30
+            + fx_stability * 0.25
+            + competitor_weakness * 0.25
+            + market_growth * 0.20
+        )
+        return min(100.0, raw * 100.0)
+
+    def _seed_opportunities(self) -> list[Opportunity]:
+        seeds = []
+        for market, geo in [("saas", "GB"), ("fintech", "US"), ("edtech", "IN"), ("cybersecurity", "US"), ("proptech", "GB")]:
+            import hashlib, uuid
+            score = self._score(0.6, 0.85, 0.7, 0.18)
+            opp_id = str(uuid.UUID(int=int(hashlib.md5(f"{market}{geo}".encode()).hexdigest(), 16)))
+            seeds.append(Opportunity(
+                id=opp_id, title=f"{market.title()} — {geo}", description="seed",
+                score=score, market=market, geography=geo, sector=market,
+                traffic_gap=0.6, fx_stability=0.85, competitor_weakness=0.7,
+                market_growth=0.18, estimated_revenue_gbp=100000.0, confidence=0.75,
+            ))
+        return seeds
+
+    def _apply_filters(self, opps: list[Opportunity], filters: OpportunityFilters) -> list[Opportunity]:
+        result = opps
+        if filters.market:
+            result = [o for o in result if o.market.lower() == filters.market.lower()]
+        if filters.min_score:
+            result = [o for o in result if o.score >= filters.min_score]
+        limit = getattr(filters, "limit", None) or filters.max_results
+        return result[:limit]
+
     def score(self, signals: dict[str, Any]) -> float:
         traffic_gap = float(signals.get("traffic_gap", 0.5))
         fx_stability = float(signals.get("fx_stability", 0.7))

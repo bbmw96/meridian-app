@@ -54,41 +54,6 @@ struct ContentRootView: View {
     }
 }
 
-struct OnboardingView: View {
-    @Environment(AppState.self) private var appState
-
-    var body: some View {
-        ZStack {
-            GradientBackground()
-            VStack(spacing: 32) {
-                Spacer()
-                VStack(spacing: 12) {
-                    Text("MERIDIAN")
-                        .font(.system(size: 48, weight: .black, design: .rounded))
-                        .foregroundStyle(Color.meridianAccent)
-                    Text("Global Business Intelligence")
-                        .font(.headline)
-                        .foregroundStyle(.secondary)
-                }
-                Spacer()
-                Button {
-                    appState.isOnboarded = true
-                } label: {
-                    Text("Get Started")
-                        .font(.headline)
-                        .foregroundStyle(Color.meridianBackground)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.meridianAccent)
-                        .clipShape(RoundedRectangle(cornerRadius: 14))
-                }
-                .padding(.horizontal, 32)
-                .padding(.bottom, 48)
-            }
-        }
-    }
-}
-
 struct MainTabView: View {
     @Environment(AppState.self) private var appState
 

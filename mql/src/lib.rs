@@ -6,13 +6,15 @@ pub mod runtime;
 pub mod token;
 pub mod typechecker;
 
+pub use codegen::ExecutionPlan;
 pub use parser::Parser;
 pub use runtime::{ExecutionResult, Runtime};
-pub use codegen::ExecutionPlan;
 
 use lexer::{LexError, Lexer};
 use parser::ParseError;
 use typechecker::{TypeChecker, TypeError};
+
+#[cfg(target_arch = "wasm32")]
 use wasm_bindgen::prelude::*;
 
 #[derive(Debug, thiserror::Error)]
@@ -41,23 +43,12 @@ pub fn compile(source: &str) -> Result<ExecutionPlan, MQLError> {
     Ok(plan)
 }
 
-/// WASM-exported entry point. Returns JSON string of ExecutionPlan or an error object.
+/// WASM-exported entry point — only compiled when targeting wasm32.
+#[cfg(target_arch = "wasm32")]
 #[wasm_bindgen]
 pub fn compile_mql(source: &str) -> String {
     match compile(source) {
-        Ok(plan) => {
-            let result = serde_json::json!({
-                "ok": true,
-                "plan": plan,
-            });
-            result.to_string()
-        }
-        Err(e) => {
-            let result = serde_json::json!({
-                "ok": false,
-                "error": e.to_string(),
-            });
-            result.to_string()
-        }
+        Ok(plan) => serde_json::json!({"ok": true, "plan": plan}).to_string(),
+        Err(e) => serde_json::json!({"ok": false, "error": e.to_string()}).to_string(),
     }
 }
