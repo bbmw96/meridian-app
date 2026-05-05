@@ -34,7 +34,7 @@ defmodule MeridianRealtime.AlertsChannel do
     else
       _ ->
         {:reply,
-         {:error, %{reason: "invalid alert config — pair (ABC/XYZ), threshold_rate (number), direction (above|below) required"}},
+         {:error, %{reason: "invalid alert config - pair (ABC/XYZ), threshold_rate (number), direction (above|below) required"}},
          socket}
     end
   end

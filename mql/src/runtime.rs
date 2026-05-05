@@ -18,7 +18,7 @@ pub enum RuntimeError {
     ExecutionFailed(String),
 }
 
-/// Dry-run executor — evaluates an ExecutionPlan and returns structured
+/// Dry-run executor - evaluates an ExecutionPlan and returns structured
 /// simulation results. Actual HTTP calls are made by the caller (iOS
 /// APIClient.swift) using the plan's steps directly.
 pub struct Runtime {

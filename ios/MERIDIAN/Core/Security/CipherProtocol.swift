@@ -5,7 +5,7 @@ import LocalAuthentication
 import CommonCrypto
 import Observation
 
-// CIPHER Protocol — Zero-Knowledge Intelligence Vault
+// CIPHER Protocol - Zero-Knowledge Intelligence Vault
 // All business intelligence stored encrypted on-device using CryptoKit.
 // Biometric authentication required for access. Zero server knowledge.
 
@@ -22,7 +22,7 @@ enum CipherError: LocalizedError {
         case .authenticationFailed:  return "Authentication failed. Please try again."
         case .keyDerivationFailed:   return "Key derivation failed."
         case .encryptionFailed:      return "Encryption failed."
-        case .decryptionFailed:      return "Decryption failed — data may be corrupted."
+        case .decryptionFailed:      return "Decryption failed - data may be corrupted."
         case .vaultLocked:           return "Intelligence Vault is locked. Authenticate to proceed."
         case .biometricsUnavailable: return "Biometric authentication is not available on this device."
         }

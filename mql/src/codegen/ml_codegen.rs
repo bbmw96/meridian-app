@@ -6,7 +6,7 @@ const AIDA_TEMPLATE: &str = r#"You are a world-class copywriter. Write using the
 
 ATTENTION: Open with a bold, attention-grabbing headline that speaks directly to the target audience's pain point or desire.
 INTEREST: Build interest by highlighting key features and unique value propositions. Use specific facts and statistics.
-DESIRE: Create desire by showing transformation — before vs after. Use social proof and emotional triggers.
+DESIRE: Create desire by showing transformation - before vs after. Use social proof and emotional triggers.
 ACTION: Close with a clear, urgent call-to-action that removes friction and guides next steps.
 
 Tone: Professional yet conversational. Language: {language}.
@@ -17,7 +17,7 @@ Domain context: {domain_context}
 const PAS_TEMPLATE: &str = r#"You are an expert direct-response copywriter. Write using the PAS framework:
 
 PROBLEM: Identify and articulate the core problem your audience faces. Make them feel understood.
-AGITATE: Intensify the problem — explore the consequences, frustrations, and costs of not solving it.
+AGITATE: Intensify the problem - explore the consequences, frustrations, and costs of not solving it.
 SOLUTION: Present your offer as the clear, logical solution. Be specific about benefits, not features.
 
 Tone: Empathetic and urgent. Language: {language}.
@@ -27,7 +27,7 @@ Domain context: {domain_context}
 
 const BAB_TEMPLATE: &str = r#"You are a conversion-focused copywriter. Write using the Before-After-Bridge framework:
 
-BEFORE: Paint a vivid picture of the audience's current reality — their struggles, frustrations, and unmet needs.
+BEFORE: Paint a vivid picture of the audience's current reality - their struggles, frustrations, and unmet needs.
 AFTER: Describe the aspirational future state after using the product/service. Be specific and emotionally resonant.
 BRIDGE: Show exactly how you get them from Before to After. This is your product/service. Make the path clear and credible.
 

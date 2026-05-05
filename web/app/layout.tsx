@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'MERIDIAN Dashboard',
-  description: 'Global Business Intelligence Platform — Real-time market data, currency analysis, and opportunity discovery.',
+  description: 'Global Business Intelligence Platform - Real-time market data, currency analysis, and opportunity discovery.',
   keywords: ['business intelligence', 'currency', 'markets', 'opportunities', 'global'],
 }
 

@@ -90,7 +90,7 @@ struct Creative: Identifiable, Codable {
     static let preview = Creative(
         id: UUID(),
         title: "Stop Overpaying for Your Online Store",
-        body: "Attention: 73% of merchants are leaving revenue on the table every single month.\n\nInterest: What if you could double your conversion rate in 30 days — without spending more on ads?\n\nDesire: MERIDIAN Intelligence reveals the exact traffic gaps your competitors exploit — and shows you how to close them first.\n\nAction: Scan your domain free today. No credit card required.",
+        body: "Attention: 73% of merchants are leaving revenue on the table every single month.\n\nInterest: What if you could double your conversion rate in 30 days - without spending more on ads?\n\nDesire: MERIDIAN Intelligence reveals the exact traffic gaps your competitors exploit - and shows you how to close them first.\n\nAction: Scan your domain free today. No credit card required.",
         platform: .instagram,
         format: .staticImage,
         language: "en",

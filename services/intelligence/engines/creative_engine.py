@@ -68,7 +68,7 @@ class CreativeEngine:
         "\n\nDeliver the response in this exact JSON structure:\n"
         '{{"headline": "...", "body": "...", "call_to_action": "..."}}\n\n'
         "PROBLEM: Identify the core pain point your audience faces.\n"
-        "AGITATION: Intensify the pain — make them feel the urgency.\n"
+        "AGITATION: Intensify the pain - make them feel the urgency.\n"
         "SOLUTION: Present {brand_name} as the clear, credible resolution.\n"
         "Keep body under 150 words. Headline under 10 words. CTA under 6 words."
     )
@@ -185,7 +185,7 @@ class CreativeEngine:
     async def _generate_static_brief(self, request: CreativeRequest) -> Creative:
         dimensions = self._get_dimensions(request.platform, "static")
 
-        headline = f"{request.brand_name} — {request.industry.title()} Redefined"
+        headline = f"{request.brand_name} - {request.industry.title()} Redefined"
         body = (
             f"Visual creative brief for {request.brand_name}.\n"
             f"Platform: {request.platform}\n"
@@ -218,7 +218,7 @@ class CreativeEngine:
     async def _generate_video_brief(self, request: CreativeRequest) -> Creative:
         dimensions = self._get_dimensions(request.platform, "video")
 
-        headline = f"{request.brand_name} Video Ad — {request.platform.title()}"
+        headline = f"{request.brand_name} Video Ad - {request.platform.title()}"
         body = (
             f"Video creative brief:\n"
             f"Brand: {request.brand_name}\n"
@@ -227,7 +227,7 @@ class CreativeEngine:
             f"Dimensions: {dimensions.width if dimensions else 1920}x{dimensions.height if dimensions else 1080}px\n"
             f"Duration: 15-30 seconds\n"
             f"Tone: {request.tone}\n"
-            f"Opening (0-3s): Bold visual hook — show the problem.\n"
+            f"Opening (0-3s): Bold visual hook - show the problem.\n"
             f"Middle (3-20s): Product demonstration with key benefit.\n"
             f"Close (20-30s): {request.brand_name} branding + CTA overlay.\n"
             f"Keywords: {', '.join(request.keywords[:5]) if request.keywords else request.industry}"

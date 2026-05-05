@@ -67,7 +67,7 @@ struct PrismTranslateView: View {
             .navigationTitle("PRISM")
             .navigationBarTitleDisplayMode(.large)
         }
-        // Apple Translation framework — on-device, fully offline
+        // Apple Translation framework - on-device, fully offline
         .translationTask(translationConfig) { session in
             do {
                 let response = try await session.translate(inputText)
@@ -102,7 +102,7 @@ struct PrismHeaderBanner: View {
                 .font(.title2)
                 .foregroundStyle(Color.meridianAccent)
             VStack(alignment: .leading, spacing: 2) {
-                Text("Neural Translation — Fully On-Device")
+                Text("Neural Translation - Fully On-Device")
                     .font(.subheadline).fontWeight(.semibold)
                 Text("21 languages · Zero network · Zero API")
                     .font(.caption).foregroundStyle(.secondary)

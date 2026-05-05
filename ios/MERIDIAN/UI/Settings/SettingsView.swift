@@ -63,7 +63,7 @@ struct SettingsView: View {
             )) {
                 ForEach(filteredCurrencies.prefix(30), id: \.self) { code in
                     let currency = SupportedCurrency.all.first { $0.code == code }
-                    Text("\(code) — \(currency?.name ?? code)").tag(code)
+                    Text("\(code) - \(currency?.name ?? code)").tag(code)
                 }
             }
             .pickerStyle(.wheel)

@@ -3,7 +3,7 @@ import NaturalLanguage
 import Network
 import Observation
 
-// NEXUS Protocol — Network Expansion & Cross-functional Unity Signal
+// NEXUS Protocol - Network Expansion & Cross-functional Unity Signal
 // Detects supply chain, partnership and structural dependencies between entities.
 // All inference runs on-device via NL embedding + DNS fingerprinting.
 
@@ -40,7 +40,7 @@ struct NexusRelationship: Identifiable, Hashable {
     let fromEntityId: UUID
     let toEntityId: UUID
     let type: RelationshipType
-    let strength: Double        // 0.0–1.0
+    let strength: Double        // 0.0-1.0
     let evidenceSources: [String]
 
     enum RelationshipType: String {
@@ -60,8 +60,8 @@ struct NexusDependencyMap: Identifiable {
     let rootDomain: String
     let entities: [NexusEntity]
     let criticalPaths: [[UUID]]     // Entity chains forming single-point-of-failure paths
-    let concentrationRisk: Double   // 0–1; high = over-dependent on few entities
-    let geographicRisk: Double      // 0–1; high = concentrated geography
+    let concentrationRisk: Double   // 0-1; high = over-dependent on few entities
+    let geographicRisk: Double      // 0-1; high = concentrated geography
     let generatedAt: Date
 }
 
@@ -76,7 +76,7 @@ final class NexusProtocol {
     private let embedding = NLEmbedding.sentenceEmbedding(for: .english)
     private let tagger = NLTagger(tagSchemes: [.nameTypeOrLexicalClass, .lemma])
 
-    // Procurement signal vocabulary — on-device, no API
+    // Procurement signal vocabulary - on-device, no API
     private let supplierSignals = [
         "powered by", "built on", "infrastructure provided by",
         "in partnership with", "supply agreement", "vendor", "supplier",

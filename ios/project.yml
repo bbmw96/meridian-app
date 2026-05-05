@@ -86,7 +86,7 @@ targets:
         NSLocalNetworkUsageDescription: "MERIDIAN uses the local network for development server connections."
         NSSpeechRecognitionUsageDescription: "MERIDIAN uses speech recognition for voice-activated intelligence queries."
         NSMicrophoneUsageDescription: "MERIDIAN uses the microphone for voice queries and audio intelligence capture."
-        # Background modes — required for remote notifications and background fetch
+        # Background modes - required for remote notifications and background fetch
         UIBackgroundModes:
           - fetch
           - remote-notification
@@ -109,7 +109,7 @@ targets:
           - UIInterfaceOrientationPortraitUpsideDown
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
-        # Export compliance — CIPHER Protocol uses standard CryptoKit AES-GCM (exempt)
+        # Export compliance - CIPHER Protocol uses standard CryptoKit AES-GCM (exempt)
         ITSAppUsesNonExemptEncryption: false
     settings:
       base:
@@ -118,7 +118,7 @@ targets:
         ENABLE_USER_SCRIPT_SANDBOXING: YES
         # Entitlements
         CODE_SIGN_ENTITLEMENTS: MERIDIAN/MERIDIAN.entitlements
-        # Automatic signing — Xcode Cloud / Codemagic will override with team ID
+        # Automatic signing - Xcode Cloud / Codemagic will override with team ID
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: ""
     dependencies:
@@ -129,13 +129,13 @@ targets:
         product: ApolloAPI
       - package: swift-collections
         product: Collections
-      # System frameworks — new engines
+      # System frameworks - new engines
       - sdk: NaturalLanguage.framework       # QUORUM, NEXUS, VAUNT, AXIOM, PRISM
       - sdk: CryptoKit.framework             # CIPHER Protocol
-      - sdk: LocalAuthentication.framework   # CIPHER — Face ID / Touch ID
-      - sdk: Network.framework               # VAUNT — passive DNS fingerprinting
-      - sdk: BackgroundTasks.framework       # PRISM — offline model updates
-      - sdk: Vision.framework                # VAUNT — future document OCR
+      - sdk: LocalAuthentication.framework   # CIPHER - Face ID / Touch ID
+      - sdk: Network.framework               # VAUNT - passive DNS fingerprinting
+      - sdk: BackgroundTasks.framework       # PRISM - offline model updates
+      - sdk: Vision.framework                # VAUNT - future document OCR
     scheme:
       testTargets:
         - MERIDIANTests

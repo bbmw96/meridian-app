@@ -1,6 +1,6 @@
 use wasm_bindgen::prelude::*;
 
-/// WASM entry point — called from Swift via WKWebView or from the iOS
+/// WASM entry point - called from Swift via WKWebView or from the iOS
 /// embedded WKWebView JavaScript bridge. Returns a JSON string.
 #[wasm_bindgen]
 pub fn compile_mql(source: &str) -> String {

@@ -3,7 +3,7 @@ import NaturalLanguage
 import Observation
 import CryptoKit
 
-// QUORUM Engine — Qualitative Unified Opinion & Reputation Observation Machine
+// QUORUM Engine - Qualitative Unified Opinion & Reputation Observation Machine
 // Aggregates multilingual stakeholder sentiment on-device. Zero data exfiltration.
 
 enum StakeholderCohort: String, CaseIterable, Identifiable {
@@ -31,7 +31,7 @@ struct SentimentObservation: Identifiable, Codable {
     let cohort: StakeholderCohort.RawValue
     let languageCode: String
     let score: Double           // -1.0 (negative) to +1.0 (positive)
-    let confidence: Double      // 0.0–1.0
+    let confidence: Double      // 0.0-1.0
     let timestamp: Date
     let domainTarget: String
 
@@ -46,7 +46,7 @@ struct QuorumReport: Identifiable {
     let generatedAt: Date
     let cohortScores: [StakeholderCohort: Double]
     let velocityDelta: Double       // Change vs previous 30-day window
-    let reputationScore: Double     // 0–1000 QUORUM proprietary score
+    let reputationScore: Double     // 0-1000 QUORUM proprietary score
     let anomalyFlags: [String]
     let observations: [SentimentObservation]
 
@@ -80,7 +80,7 @@ final class QuorumEngine {
     private let languageRecogniser = NLLanguageRecognizer()
     private let entityTagger = NLTagger(tagSchemes: [.nameTypeOrLexicalClass])
 
-    // QUORUM Proprietary Scoring — 47-signal weighted algorithm
+    // QUORUM Proprietary Scoring - 47-signal weighted algorithm
     private let cohortWeights: [StakeholderCohort: Double] = [
         .investor:  0.30,
         .customer:  0.25,
@@ -158,7 +158,7 @@ final class QuorumEngine {
             }
         }
 
-        // QUORUM Score: weighted average mapped to 0–1000
+        // QUORUM Score: weighted average mapped to 0-1000
         var weighted = 0.0
         for (cohort, weight) in cohortWeights {
             weighted += (cohortScores[cohort] ?? 0) * weight
@@ -174,7 +174,7 @@ final class QuorumEngine {
             }
         }
 
-        // Velocity: compare to stored baseline (simplified — production would use CoreData)
+        // Velocity: compare to stored baseline (simplified - production would use CoreData)
         let velocityDelta = Double.random(in: -0.15...0.15) // placeholder for first-run
 
         return QuorumReport(

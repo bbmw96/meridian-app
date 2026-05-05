@@ -136,7 +136,7 @@ final class CurrencyEngine {
     private func scheduleAlertNotification(alert: RateAlert, currentRate: Double) {
         let content = UNMutableNotificationContent()
         content.title = "Rate Alert: \(alert.pair)"
-        content.body = "\(alert.pair) is now \(String(format: "%.4f", currentRate)) — \(alert.description)"
+        content.body = "\(alert.pair) is now \(String(format: "%.4f", currentRate)) - \(alert.description)"
         content.sound = .default
 
         let request = UNNotificationRequest(

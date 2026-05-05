@@ -27,7 +27,7 @@ const MOCK_RESULTS: Record<string, ScanResult> = {
     flags: [
       { type: 'safe', message: 'Valid SSL certificate (EV)' },
       { type: 'safe', message: 'DMARC policy enforced' },
-      { type: 'warning', message: 'No CDN detected — latency risk' },
+      { type: 'warning', message: 'No CDN detected - latency risk' },
     ],
     technologies: ['React', 'Node.js', 'Cloudflare', 'PostgreSQL'],
     marketPresence: 'Strong in APAC, emerging in EMEA',

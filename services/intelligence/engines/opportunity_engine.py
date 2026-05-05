@@ -132,7 +132,7 @@ class OpportunityEngine:
                 opportunities.append(
                     Opportunity(
                         id=opp_id,
-                        title=f"{market.title()} Expansion — {geo}",
+                        title=f"{market.title()} Expansion - {geo}",
                         description=(
                             f"High-value opportunity in the {market} sector within {geo}. "
                             f"Market growing at {market_growth * 100:.1f}% annually with "
@@ -181,7 +181,7 @@ class OpportunityEngine:
             score = self._score(0.6, 0.85, 0.7, 0.18)
             opp_id = str(uuid.UUID(int=int(hashlib.md5(f"{market}{geo}".encode()).hexdigest(), 16)))
             seeds.append(Opportunity(
-                id=opp_id, title=f"{market.title()} — {geo}", description="seed",
+                id=opp_id, title=f"{market.title()} - {geo}", description="seed",
                 score=score, market=market, geography=geo, sector=market,
                 traffic_gap=0.6, fx_stability=0.85, competitor_weakness=0.7,
                 market_growth=0.18, estimated_revenue_gbp=100000.0, confidence=0.75,

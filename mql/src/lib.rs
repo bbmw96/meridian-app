@@ -43,7 +43,7 @@ pub fn compile(source: &str) -> Result<ExecutionPlan, MQLError> {
     Ok(plan)
 }
 
-/// WASM-exported entry point — only compiled when targeting wasm32.
+/// WASM-exported entry point - only compiled when targeting wasm32.
 #[cfg(target_arch = "wasm32")]
 #[wasm_bindgen]
 pub fn compile_mql(source: &str) -> String {

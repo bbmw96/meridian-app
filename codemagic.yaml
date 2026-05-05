@@ -6,7 +6,7 @@
 # 2. Sign in at codemagic.io with your GitHub account
 # 3. Add New Application → select this repo → "codemagic.yaml" configuration
 # 4. Set environment variables in Codemagic UI (see "Environment variables" below)
-# 5. Trigger a build — Codemagic uploads the IPA to TestFlight automatically
+# 5. Trigger a build - Codemagic uploads the IPA to TestFlight automatically
 
 workflows:
 
@@ -32,17 +32,17 @@ workflows:
         - certificate_credentials # CERTIFICATE_PRIVATE_KEY
 
       # Set these in the Codemagic UI under "Environment variables":
-      #   APP_STORE_CONNECT_KEY_IDENTIFIER  — from App Store Connect → Users & Access → Keys
-      #   APP_STORE_CONNECT_ISSUER_ID       — same page
-      #   APP_STORE_CONNECT_PRIVATE_KEY     — contents of the .p8 file (mark as secure)
-      #   CERTIFICATE_PRIVATE_KEY           — your iOS Distribution certificate private key PEM
+      #   APP_STORE_CONNECT_KEY_IDENTIFIER  - from App Store Connect → Users & Access → Keys
+      #   APP_STORE_CONNECT_ISSUER_ID       - same page
+      #   APP_STORE_CONNECT_PRIVATE_KEY     - contents of the .p8 file (mark as secure)
+      #   CERTIFICATE_PRIVATE_KEY           - your iOS Distribution certificate private key PEM
       vars:
         BUNDLE_ID: com.meridian.app
         XCODE_PROJECT: ios/MERIDIAN.xcodeproj
         XCODE_SCHEME: MERIDIAN
 
     scripts:
-      # 1 — Install XcodeGen and generate the .xcodeproj from project.yml
+      # 1 - Install XcodeGen and generate the .xcodeproj from project.yml
       - name: Generate Xcode project
         script: |
           brew install xcodegen
@@ -51,14 +51,14 @@ workflows:
           echo "Generated:"
           ls -la MERIDIAN.xcodeproj/
 
-      # 2 — Resolve Swift Package dependencies
+      # 2 - Resolve Swift Package dependencies
       - name: Resolve SPM dependencies
         script: |
           xcodebuild -resolvePackageDependencies \
             -project "$XCODE_PROJECT" \
             -scheme "$XCODE_SCHEME"
 
-      # 3 — Set up code signing (automatic via App Store Connect API key)
+      # 3 - Set up code signing (automatic via App Store Connect API key)
       - name: Set up code signing
         script: |
           keychain initialize
@@ -68,17 +68,17 @@ workflows:
           keychain add-certificates
           xcode-project use-profiles
 
-      # 4 — Bump build number to Codemagic build number
+      # 4 - Bump build number to Codemagic build number
       - name: Set build number
         script: |
           cd ios
           if [ ! -f "MERIDIAN/Info.plist" ]; then
-            echo "ERROR: Info.plist not found — xcodegen must run before agvtool." >&2
+            echo "ERROR: Info.plist not found - xcodegen must run before agvtool." >&2
             exit 1
           fi
           agvtool new-version -all "$BUILD_NUMBER"
 
-      # 5 — Build and archive
+      # 5 - Build and archive
       - name: Build for App Store
         script: |
           TEAM_ID=$(app-store-connect list-certificates --type IOS_DISTRIBUTION --json | jq -r '.[0].attributes.teamId // empty')
@@ -96,7 +96,7 @@ workflows:
             DEVELOPMENT_TEAM="$TEAM_ID" \
             | xcpretty
 
-      # 6 — Export IPA
+      # 6 - Export IPA
       - name: Export IPA
         script: |
           xcodebuild \

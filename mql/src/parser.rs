@@ -591,7 +591,7 @@ impl Parser {
 
         // optional asset type ident before STYLE
         if let Token::Ident(_) = self.peek().clone() {
-            // Could be asset type or something else — only consume if next-next is STYLE
+            // Could be asset type or something else - only consume if next-next is STYLE
             // Simple approach: consume if it's not a keyword that starts another clause
             match self.peek().clone() {
                 Token::Ident(_) => {

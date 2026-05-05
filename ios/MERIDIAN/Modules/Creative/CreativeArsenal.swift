@@ -73,11 +73,11 @@ final class CreativeArsenal {
         let body: String
         switch framework {
         case .aida:
-            body = "Attention: \(domainName) is growing 34% faster than its category average.\n\nInterest: MERIDIAN's intelligence layer identified 12 untapped keyword clusters across 6 markets — all with less than 3 competitors.\n\nDesire: Brands using these gaps report \(currencySymbol)2.4M in incremental revenue within 90 days.\n\nAction: Start your free MERIDIAN scan today."
+            body = "Attention: \(domainName) is growing 34% faster than its category average.\n\nInterest: MERIDIAN's intelligence layer identified 12 untapped keyword clusters across 6 markets - all with less than 3 competitors.\n\nDesire: Brands using these gaps report \(currencySymbol)2.4M in incremental revenue within 90 days.\n\nAction: Start your free MERIDIAN scan today."
         case .pas:
-            body = "Problem: You're watching competitors take market share — but you don't know which markets, which keywords, or which ad channels to target.\n\nAgitation: Every day without intelligence is revenue left on the table. Your competitors already have this data.\n\nSolution: MERIDIAN scans any domain in seconds and surfaces every exploitable gap — traffic, keywords, geography, ad spend. All in one place."
+            body = "Problem: You're watching competitors take market share - but you don't know which markets, which keywords, or which ad channels to target.\n\nAgitation: Every day without intelligence is revenue left on the table. Your competitors already have this data.\n\nSolution: MERIDIAN scans any domain in seconds and surfaces every exploitable gap - traffic, keywords, geography, ad spend. All in one place."
         case .beforeAfterBridge:
-            body = "Before: Guessing which markets to enter. Spending ad budget on keywords you think work. Watching competitors grow and not knowing why.\n\nAfter: Real intelligence. Confirmed traffic gaps. Currency-adjusted revenue forecasts. Competitor ad spend signals.\n\nBridge: MERIDIAN — the business intelligence OS for global brands."
+            body = "Before: Guessing which markets to enter. Spending ad budget on keywords you think work. Watching competitors grow and not knowing why.\n\nAfter: Real intelligence. Confirmed traffic gaps. Currency-adjusted revenue forecasts. Competitor ad spend signals.\n\nBridge: MERIDIAN - the business intelligence OS for global brands."
         }
 
         return Creative(

@@ -2,10 +2,10 @@ import Foundation
 import NaturalLanguage
 import Observation
 
-// AXIOM Engine — Automated eXpert Intelligence & Outcome Modelling
+// AXIOM Engine - Automated eXpert Intelligence & Outcome Modelling
 // Generates forward scenario models for business decisions using causal
 // inference over a bundled library of historical case outcomes.
-// Zero API required — all inference runs on-device.
+// Zero API required - all inference runs on-device.
 
 enum AxiomDecisionType: String, CaseIterable, Identifiable {
     case marketEntry     = "Market Entry"
@@ -59,7 +59,7 @@ struct AxiomDecisionModel: Identifiable {
     let analogueCases: [AxiomAnalogue]
     let sensitivityRankings: [(variable: String, impact: Double)]
     let generatedAt: Date
-    let decisionQualityScore: Double    // 0–1; how well-specified the input was
+    let decisionQualityScore: Double    // 0-1; how well-specified the input was
 }
 
 struct AxiomAnalogue: Identifiable {
@@ -82,7 +82,7 @@ final class AxiomEngine {
     private let embedding = NLEmbedding.wordEmbedding(for: .english)
 
     // Bundled historical outcome patterns (production: CoreData store with 10K entries)
-    // These are generalised, anonymised archetypes — not real company data
+    // These are generalised, anonymised archetypes - not real company data
     private let outcomeLibrary: [AxiomDecisionType: [AxiomOutcomePattern]] = AxiomOutcomeLibrary.patterns
 
     func model(question: String, type: AxiomDecisionType, context: String) async {
@@ -245,8 +245,8 @@ enum AxiomOutcomeLibrary {
                 baseSuccessRate: 0.58,
                 medianMonthsToROI: 24,
                 typicalOutcome: "Achieved 60% of projected ARR target in year 1",
-                typicalTimeframe: "18–36 months to profitability in market",
-                keyLearning: "Regulatory compliance investment in month 1 determines speed in months 12–24.",
+                typicalTimeframe: "18-36 months to profitability in market",
+                keyLearning: "Regulatory compliance investment in month 1 determines speed in months 12-24.",
                 topRisks: ["Underestimated localisation cost", "Sales cycle elongation", "GDPR compliance debt"],
                 topEnablers: ["In-market sales hire before launch", "Channel partner agreement", "Pilot customer secured pre-entry"]
             )
@@ -257,7 +257,7 @@ enum AxiomOutcomeLibrary {
                 baseSuccessRate: 0.62,
                 medianMonthsToROI: 14,
                 typicalOutcome: "Achieved product-market fit signal within 90 days",
-                typicalTimeframe: "10–18 months to material revenue contribution",
+                typicalTimeframe: "10-18 months to material revenue contribution",
                 keyLearning: "Products launched with ≥3 design partners have 2.4× higher 12-month retention.",
                 topRisks: ["Feature over-engineering before launch", "GTM channel mismatch", "Internal resource competition"],
                 topEnablers: ["Design partner cohort", "Clear ICP definition", "Usage metric instrumentation from day 1"]
@@ -269,7 +269,7 @@ enum AxiomOutcomeLibrary {
                 baseSuccessRate: 0.51,
                 medianMonthsToROI: 36,
                 typicalOutcome: "EBITDA synergies realised at 70% of deal thesis",
-                typicalTimeframe: "24–48 months for full integration and synergy capture",
+                typicalTimeframe: "24-48 months for full integration and synergy capture",
                 keyLearning: "100-day integration plans that address people issues first outperform those focused on systems first.",
                 topRisks: ["Key talent attrition post-close", "Technology stack incompatibility", "Customer uncertainty churn"],
                 topEnablers: ["Retention packages signed pre-close", "Integration playbook", "Customer communication plan"]
@@ -280,8 +280,8 @@ enum AxiomOutcomeLibrary {
                 archetype: "SaaS, transitioning from flat to usage-based pricing",
                 baseSuccessRate: 0.67,
                 medianMonthsToROI: 9,
-                typicalOutcome: "NRR improved 15–22% within 12 months of migration",
-                typicalTimeframe: "6–12 months for full cohort migration",
+                typicalOutcome: "NRR improved 15-22% within 12 months of migration",
+                typicalTimeframe: "6-12 months for full cohort migration",
                 keyLearning: "Grandfathering legacy customers for 12 months reduces churn from pricing changes by 60%.",
                 topRisks: ["Net revenue contraction during transition", "Sales team confusion", "Competitor price response"],
                 topEnablers: ["Transparent migration path", "Usage analytics infrastructure", "Champion customer success stories"]
@@ -293,7 +293,7 @@ enum AxiomOutcomeLibrary {
                 baseSuccessRate: 0.54,
                 medianMonthsToROI: 20,
                 typicalOutcome: "Achieved 40% of projected DAU target in first market in 12 months",
-                typicalTimeframe: "12–30 months to unit economics parity with home market",
+                typicalTimeframe: "12-30 months to unit economics parity with home market",
                 keyLearning: "Apps localised beyond language (UX patterns, payment methods, content) grow 3× faster.",
                 topRisks: ["App store localisation quality", "Local payment method absence", "Regulatory differences"],
                 topEnablers: ["Local community manager", "Regional payment integration", "In-country legal counsel"]
@@ -305,7 +305,7 @@ enum AxiomOutcomeLibrary {
                 baseSuccessRate: 0.71,
                 medianMonthsToROI: 3,
                 typicalOutcome: "Closed at target within 90 days",
-                typicalTimeframe: "60–120 days from first LP meeting to close",
+                typicalTimeframe: "60-120 days from first LP meeting to close",
                 keyLearning: "Founders who create competitive tension (multiple term sheets) close at 23% higher valuations.",
                 topRisks: ["Single investor dependency", "Macro rate environment", "Metrics deterioration during process"],
                 topEnablers: ["Clean data room from day 1", "Warm introductions to lead investors", "Metrics dashboard access for diligence"]
@@ -317,7 +317,7 @@ enum AxiomOutcomeLibrary {
                 baseSuccessRate: 0.44,
                 medianMonthsToROI: 30,
                 typicalOutcome: "Successfully crossed $1M ARR in new segment within 18 months",
-                typicalTimeframe: "18–42 months for full business model transformation",
+                typicalTimeframe: "18-42 months for full business model transformation",
                 keyLearning: "Pivots that retain ≥40% of existing customer base in new model have 2.8× higher survival rates.",
                 topRisks: ["Team expertise gap in new segment", "Brand perception mismatch", "Cash runway during transition"],
                 topEnablers: ["Retained core technology asset", "Early enterprise design partner", "Runway extension or bridge capital"]

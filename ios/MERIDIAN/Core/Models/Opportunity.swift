@@ -47,7 +47,7 @@ struct Opportunity: Identifiable, Codable {
         ),
         Opportunity(
             id: UUID(),
-            title: "FinTech SEO Arbitrage — SE Asia",
+            title: "FinTech SEO Arbitrage - SE Asia",
             description: "Singapore and Malaysia show rising search intent for UK-regulated fintech with virtually no local competition on English-language terms.",
             market: "FinTech",
             geography: "SG",
@@ -60,7 +60,7 @@ struct Opportunity: Identifiable, Codable {
         ),
         Opportunity(
             id: UUID(),
-            title: "SaaS Expansion — Nordics",
+            title: "SaaS Expansion - Nordics",
             description: "Nordic B2B SaaS buyers are actively searching for alternatives to US-domiciled tools due to data residency concerns. GBP/SEK is stable.",
             market: "SaaS",
             geography: "SE",
@@ -73,7 +73,7 @@ struct Opportunity: Identifiable, Codable {
         ),
         Opportunity(
             id: UUID(),
-            title: "DTC Health — UAE",
+            title: "DTC Health - UAE",
             description: "UAE consumers show 6x YoY growth in health product searches. Low local competition, strong USD peg provides currency certainty.",
             market: "Health",
             geography: "AE",

@@ -1,14 +1,14 @@
 #!/bin/bash
 # Xcode Cloud pre-xcodebuild script.
 # Runs immediately before every xcodebuild invocation.
-# XcodeGen is installed in ci_post_clone.sh — this script only generates the project.
+# XcodeGen is installed in ci_post_clone.sh - this script only generates the project.
 set -euo pipefail
 
 echo "=== MERIDIAN pre-xcodebuild: generating Xcode project ==="
 
 # ── Verify XcodeGen is available ─────────────────────────────────────────────
 if ! command -v xcodegen &> /dev/null; then
-    echo "XcodeGen not found — installing now (fallback from post-clone)..."
+    echo "XcodeGen not found - installing now (fallback from post-clone)..."
     brew install xcodegen
 fi
 

@@ -3,7 +3,7 @@ import Translation
 import NaturalLanguage
 import Observation
 
-// PRISM Translator — Precision Real-time Intelligence Signal Machine
+// PRISM Translator - Precision Real-time Intelligence Signal Machine
 // On-device neural translation using Apple's Translation framework (iOS 17.4+).
 // Zero API calls. Zero data exfiltration. Fully offline capability.
 // Top 20 most-spoken world languages + Malay.
@@ -18,20 +18,20 @@ struct PrismLanguage: Identifiable, Hashable {
 
     enum Tier: Int {
         case tier1 = 1      // Top 5 by speakers
-        case tier2 = 2      // Top 6–15
-        case tier3 = 3      // Top 16–21 + Malay (user requirement)
+        case tier2 = 2      // Top 6-15
+        case tier3 = 3      // Top 16-21 + Malay (user requirement)
     }
 
     // Top spoken languages worldwide + Malay
     static let supported: [PrismLanguage] = [
-        // Tier 1 — >400M native speakers
+        // Tier 1 - >400M native speakers
         PrismLanguage(id: "zh-Hans", nativeName: "普通话", englishName: "Mandarin Chinese", speakers: 1100, isRTL: false, tier: .tier1),
         PrismLanguage(id: "es",      nativeName: "Español",   englishName: "Spanish",          speakers: 485, isRTL: false, tier: .tier1),
         PrismLanguage(id: "en",      nativeName: "English",   englishName: "English",          speakers: 380, isRTL: false, tier: .tier1),
         PrismLanguage(id: "hi",      nativeName: "हिन्दी",    englishName: "Hindi",            speakers: 345, isRTL: false, tier: .tier1),
         PrismLanguage(id: "ar",      nativeName: "العربية",   englishName: "Arabic",           speakers: 420, isRTL: true,  tier: .tier1),
 
-        // Tier 2 — 60–300M native speakers
+        // Tier 2 - 60-300M native speakers
         PrismLanguage(id: "pt-BR",   nativeName: "Português", englishName: "Portuguese",       speakers: 234, isRTL: false, tier: .tier2),
         PrismLanguage(id: "bn",      nativeName: "বাংলা",     englishName: "Bengali",          speakers: 228, isRTL: false, tier: .tier2),
         PrismLanguage(id: "ru",      nativeName: "Русский",   englishName: "Russian",          speakers: 154, isRTL: false, tier: .tier2),
@@ -43,7 +43,7 @@ struct PrismLanguage: Identifiable, Hashable {
         PrismLanguage(id: "de",      nativeName: "Deutsch",   englishName: "German",           speakers: 78, isRTL: false, tier: .tier2),
         PrismLanguage(id: "id",      nativeName: "Bahasa Indonesia", englishName: "Indonesian", speakers: 199, isRTL: false, tier: .tier2),
 
-        // Tier 3 — notable + Malay (user requirement)
+        // Tier 3 - notable + Malay (user requirement)
         PrismLanguage(id: "it",      nativeName: "Italiano",  englishName: "Italian",          speakers: 63, isRTL: false, tier: .tier3),
         PrismLanguage(id: "fa",      nativeName: "فارسی",     englishName: "Persian",          speakers: 77, isRTL: true,  tier: .tier3),
         PrismLanguage(id: "th",      nativeName: "ไทย",       englishName: "Thai",             speakers: 61, isRTL: false, tier: .tier3),
@@ -102,7 +102,7 @@ final class PrismTranslator {
             throw PrismError.unsupportedLanguagePair
         }
 
-        // Apple Translation — fully on-device, iOS 17.4+
+        // Apple Translation - fully on-device, iOS 17.4+
         let session = TranslationSession.Configuration(source: source, target: target)
         // Note: TranslationSession is attached to a View in SwiftUI via .translationTask modifier
         // This engine provides the data model; the View layer drives the actual session
@@ -110,7 +110,7 @@ final class PrismTranslator {
         let translation = PrismTranslation(
             id: UUID(),
             originalText: text,
-            translatedText: "[Translation pending — attach to View via .translationTask]",
+            translatedText: "[Translation pending - attach to View via .translationTask]",
             sourceLanguageId: sourceCode,
             targetLanguageId: targetLang.id,
             isOnDevice: true,

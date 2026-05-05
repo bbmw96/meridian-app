@@ -352,7 +352,7 @@ export default function DashboardPage() {
   )
 }
 
-// ── Rate alert row (static/display only — toggles would need client component) ──
+// ── Rate alert row (static/display only - toggles would need client component) ──
 function RateAlertRow({
   alert,
 }: {

@@ -1,4 +1,4 @@
-# MERIDIAN — Global Business Intelligence Operating System
+# MERIDIAN - Global Business Intelligence Operating System
 ## Design Specification v1.0 | 2026-05-04
 
 ---
@@ -8,15 +8,15 @@
 MERIDIAN is a universal mobile-native business intelligence operating system. It unifies three data
 domains that have never existed together in a single application on any platform:
 
-1. **Competitive intelligence** (traffic, keywords, firmographic signals — inspired by SimilarWeb)
-2. **Currency-aware market analysis** (real-time FX rates, purchasing power parity, rate alerts — inspired by XE.com)
-3. **AI creative generation** (multi-model ad and content production — inspired by Zeely AI)
+1. **Competitive intelligence** (traffic, keywords, firmographic signals - inspired by SimilarWeb)
+2. **Currency-aware market analysis** (real-time FX rates, purchasing power parity, rate alerts - inspired by XE.com)
+3. **AI creative generation** (multi-model ad and content production - inspired by Zeely AI)
 
 A custom query language, **MQL (MERIDIAN Query Language)**, ties all three engines together with a
 unified, composable syntax that any user can write in plain English.
 
 **Platform**: iOS (iPhone-first, designed to iPad scale)
-**Target**: Universal — no persona restriction; any person or business querying global markets
+**Target**: Universal - no persona restriction; any person or business querying global markets
 **Languages supported**: 100+ (full localisation, RTL support)
 **App Store status**: No equivalent exists on App Store, Google Play, or Microsoft Store
 
@@ -58,7 +58,7 @@ MERIDIAN solves all four gaps simultaneously.
 - Frameworks: AIDA, PAS, Before-After-Bridge built into script generation
 - Platforms: Meta, TikTok, Google Ads, LinkedIn, Snapchat, Pinterest formats
 
-### 3.4 MQL — MERIDIAN Query Language
+### 3.4 MQL - MERIDIAN Query Language
 A purpose-built DSL for unified business intelligence queries. Compiles to REST API calls, SQL,
 and ML inference tasks. Runs natively on-device via a Swift-bridged Rust WASM module.
 
@@ -97,45 +97,45 @@ Bridge: Swift Package via C FFI, compiled to WASM for portability.
 
 ### 4.1 iOS App (Swift 6 + SwiftUI)
 ```
-MERIDIANApp.swift           — app entry, scene lifecycle
-AppState.swift              — global observable state
+MERIDIANApp.swift           - app entry, scene lifecycle
+AppState.swift              - global observable state
 Modules/
-  Intelligence/             — competitive intelligence engine
-  Currency/                 — FX engine
-  Creative/                 — AI creative arsenal
-  MQL/                      — query language runtime bridge
-  Radar/                    — opportunity detection
-  Globalisation/            — i18n engine
+  Intelligence/             - competitive intelligence engine
+  Currency/                 - FX engine
+  Creative/                 - AI creative arsenal
+  MQL/                      - query language runtime bridge
+  Radar/                    - opportunity detection
+  Globalisation/            - i18n engine
 Core/
-  Network/                  — API + GraphQL + WebSocket clients
-  Storage/                  — Core Data + CloudKit persistence
-  Models/                   — shared data models
-  Extensions/               — SwiftUI extensions
+  Network/                  - API + GraphQL + WebSocket clients
+  Storage/                  - Core Data + CloudKit persistence
+  Models/                   - shared data models
+  Extensions/               - SwiftUI extensions
 UI/
-  Dashboard/                — home feed
-  Scanner/                  — domain intelligence view
-  Currency/                 — FX view
-  Creative/                 — ad generator view
-  MQLTerminal/              — query language REPL
-  Radar/                    — opportunity map view
-  Settings/                 — preferences
-  Components/               — shared UI primitives
+  Dashboard/                - home feed
+  Scanner/                  - domain intelligence view
+  Currency/                 - FX view
+  Creative/                 - ad generator view
+  MQLTerminal/              - query language REPL
+  Radar/                    - opportunity map view
+  Settings/                 - preferences
+  Components/               - shared UI primitives
 Resources/
-  Localisation/             — 100+ .lproj bundles
+  Localisation/             - 100+ .lproj bundles
 ```
 
 ### 4.2 Custom Language: MQL (Rust)
 ```
-lexer.rs      — tokenises MQL source text
-token.rs      — token enum definitions
-parser.rs     — recursive-descent parser, produces AST
-ast.rs        — abstract syntax tree node types
-typechecker.rs — type inference and semantic validation
+lexer.rs      - tokenises MQL source text
+token.rs      - token enum definitions
+parser.rs     - recursive-descent parser, produces AST
+ast.rs        - abstract syntax tree node types
+typechecker.rs - type inference and semantic validation
 codegen/
-  api_codegen.rs  — emits REST API call sequences
-  sql_codegen.rs  — emits SQL for analytics backend
-  ml_codegen.rs   — emits ML inference task descriptors
-runtime.rs    — executes compiled instruction streams
+  api_codegen.rs  - emits REST API call sequences
+  sql_codegen.rs  - emits SQL for analytics backend
+  ml_codegen.rs   - emits ML inference task descriptors
+runtime.rs    - executes compiled instruction streams
 ```
 
 ### 4.3 Backend Services

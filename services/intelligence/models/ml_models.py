@@ -106,7 +106,7 @@ class SimpleTrafficEstimator:
 
     def predict(self, features: np.ndarray) -> Tuple[float, float]:
         if self._model is None or self._scaler is None:
-            raise RuntimeError("Model not trained — call load_or_train() first")
+            raise RuntimeError("Model not trained - call load_or_train() first")
 
         X_scaled = self._scaler.transform(features)
 

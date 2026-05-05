@@ -29,7 +29,7 @@ async function bootstrap(): Promise<void> {
     await redis.connect();
     console.log('[BFF] Redis connected at', REDIS_URL);
   } catch (err) {
-    console.warn('[BFF] Redis unavailable — caching disabled:', (err as Error).message);
+    console.warn('[BFF] Redis unavailable - caching disabled:', (err as Error).message);
   }
 
   const app = express();

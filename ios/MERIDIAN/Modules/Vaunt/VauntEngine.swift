@@ -3,7 +3,7 @@ import Network
 import NaturalLanguage
 import Observation
 
-// VAUNT Engine — Vulnerability & Asset Uncovering Neural Tracker
+// VAUNT Engine - Vulnerability & Asset Uncovering Neural Tracker
 // Passively profiles any domain's digital infrastructure using only
 // public DNS, NLP pattern inference and on-device analysis. Zero server contact.
 
@@ -16,7 +16,7 @@ struct InfrastructureFingerprint: Identifiable {
     let tlsIssuer: String?
     let techStack: [TechSignal]
     let exposedSignals: [ExposedSignal]
-    let vauntScore: Int             // 0–1000: higher = more exposed
+    let vauntScore: Int             // 0-1000: higher = more exposed
     let generatedAt: Date
 
     var riskLevel: String {
@@ -145,7 +145,7 @@ final class VauntEngine {
             cdnProvider: dnsResult.cdn,
             emailProvider: dnsResult.emailProvider,
             nameserverProvider: dnsResult.nameserver,
-            tlsIssuer: nil, // Requires TLS connection — future enhancement
+            tlsIssuer: nil, // Requires TLS connection - future enhancement
             techStack: techSignals,
             exposedSignals: exposedSignals,
             vauntScore: vauntScore,
@@ -157,7 +157,7 @@ final class VauntEngine {
     }
 
     private func resolveDNS(domain: String) async -> (cdn: String?, emailProvider: String?, nameserver: String?) {
-        // Uses system DNS resolver — no third-party API
+        // Uses system DNS resolver - no third-party API
         var cdn: String? = nil
         var emailProvider: String? = nil
 

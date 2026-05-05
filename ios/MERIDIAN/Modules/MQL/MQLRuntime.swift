@@ -19,7 +19,7 @@ enum MQLResult {
 
     var summary: String {
         switch self {
-        case .scanResult(let r): return "Scan: \(r.profile.name) — \(r.profile.formattedTraffic)/mo"
+        case .scanResult(let r): return "Scan: \(r.profile.name) - \(r.profile.formattedTraffic)/mo"
         case .opportunities(let list): return "\(list.count) opportunities found"
         case .creative(let c): return "Creative: \(c.title)"
         case .alert(let a): return "Alert set: \(a.description)"
@@ -132,11 +132,11 @@ final class MQLRuntime {
     MERIDIAN Query Language (MQL) v1.0
 
     Commands:
-      SCAN <domain>                     — Scan a domain for intelligence
-      OPPORTUNITIES                     — List all current opportunities
-      SHOW OPPORTUNITIES WHERE ...      — Filter opportunities
-      ALERT <pair> <above|below> <val>  — Set a currency alert
-      HELP                              — Show this help
+      SCAN <domain>                     - Scan a domain for intelligence
+      OPPORTUNITIES                     - List all current opportunities
+      SHOW OPPORTUNITIES WHERE ...      - Filter opportunities
+      ALERT <pair> <above|below> <val>  - Set a currency alert
+      HELP                              - Show this help
 
     Examples:
       SCAN amazon.co.uk

@@ -27,12 +27,12 @@ SCAN domain "shopify.com"
 ```
 
 Clauses (all optional after the domain):
-- `COMPARE competitors TOP <n>` — discover the top n competitor domains
-- `WHERE <expr>` — filter competitors by field conditions
-- `CONVERT revenue TO "<currency>"` — show revenue estimates in target currency
-- `GENERATE ad ...` — produce an AI creative for the domain's audience
-- `RANK BY <field> ASC|DESC` — sort results
-- `LIMIT <n>` — restrict result count
+- `COMPARE competitors TOP <n>` - discover the top n competitor domains
+- `WHERE <expr>` - filter competitors by field conditions
+- `CONVERT revenue TO "<currency>"` - show revenue estimates in target currency
+- `GENERATE ad ...` - produce an AI creative for the domain's audience
+- `RANK BY <field> ASC|DESC` - sort results
+- `LIMIT <n>` - restrict result count
 
 ---
 

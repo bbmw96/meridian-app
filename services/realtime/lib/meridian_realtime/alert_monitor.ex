@@ -43,7 +43,7 @@ defmodule MeridianRealtime.AlertMonitor do
 
     new_alerts = [alert_config | filtered]
 
-    Logger.debug("[AlertMonitor] Registered alert for #{user_id} — #{pair} #{alert_config.direction} #{alert_config.threshold_rate}")
+    Logger.debug("[AlertMonitor] Registered alert for #{user_id} - #{pair} #{alert_config.direction} #{alert_config.threshold_rate}")
 
     {:noreply, %{state | alerts: new_alerts}}
   end
@@ -54,7 +54,7 @@ defmodule MeridianRealtime.AlertMonitor do
         a.user_id == user_id and a.pair == pair
       end)
 
-    Logger.debug("[AlertMonitor] Deregistered alert for #{user_id} — #{pair}")
+    Logger.debug("[AlertMonitor] Deregistered alert for #{user_id} - #{pair}")
 
     {:noreply, %{state | alerts: new_alerts}}
   end
@@ -122,7 +122,7 @@ defmodule MeridianRealtime.AlertMonitor do
                 {:alert_triggered, payload}
               )
 
-              Logger.info("[AlertMonitor] Alert triggered for #{alert.user_id} — #{alert.pair} #{alert.direction} #{alert.threshold_rate} (current: #{current_rate})")
+              Logger.info("[AlertMonitor] Alert triggered for #{alert.user_id} - #{alert.pair} #{alert.direction} #{alert.threshold_rate} (current: #{current_rate})")
             end
           end
       end
