@@ -61,31 +61,47 @@ struct MainTabView: View {
         @Bindable var state = appState
         TabView(selection: $state.selectedTab) {
             DashboardView()
-                .tabItem { Label("Dashboard", systemImage: "chart.line.uptrend.xyaxis") }
+                .tabItem { Label("Dashboard", systemImage: Tab.dashboard.icon) }
                 .tag(Tab.dashboard)
 
             IntelligenceScannerView()
-                .tabItem { Label("Scanner", systemImage: "viewfinder.circle") }
+                .tabItem { Label("Scanner", systemImage: Tab.scanner.icon) }
                 .tag(Tab.scanner)
 
             CurrencyView()
-                .tabItem { Label("Currency", systemImage: "arrow.left.arrow.right.circle") }
+                .tabItem { Label("Currency", systemImage: Tab.currency.icon) }
                 .tag(Tab.currency)
 
+            QuorumView()
+                .tabItem { Label("QUORUM", systemImage: Tab.quorum.icon) }
+                .tag(Tab.quorum)
+
+            PrismTranslateView()
+                .tabItem { Label("PRISM", systemImage: Tab.prism.icon) }
+                .tag(Tab.prism)
+
+            AxiomView()
+                .tabItem { Label("AXIOM", systemImage: Tab.axiom.icon) }
+                .tag(Tab.axiom)
+
+            VaultView()
+                .tabItem { Label("Vault", systemImage: Tab.vault.icon) }
+                .tag(Tab.vault)
+
             CreativeView()
-                .tabItem { Label("Creative", systemImage: "wand.and.stars") }
+                .tabItem { Label("Creative", systemImage: Tab.creative.icon) }
                 .tag(Tab.creative)
 
             MQLTerminalView()
-                .tabItem { Label("Terminal", systemImage: "terminal") }
+                .tabItem { Label("Terminal", systemImage: Tab.terminal.icon) }
                 .tag(Tab.terminal)
 
             RadarView()
-                .tabItem { Label("Radar", systemImage: "antenna.radiowaves.left.and.right") }
+                .tabItem { Label("Radar", systemImage: Tab.radar.icon) }
                 .tag(Tab.radar)
 
             SettingsView()
-                .tabItem { Label("Settings", systemImage: "gearshape") }
+                .tabItem { Label("Settings", systemImage: Tab.settings.icon) }
                 .tag(Tab.settings)
         }
     }

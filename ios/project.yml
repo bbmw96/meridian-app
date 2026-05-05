@@ -23,8 +23,8 @@ settings:
     GCC_OPTIMIZATION_LEVEL: 0
     SWIFT_OPTIMIZATION_LEVEL: "-Onone"
     ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
-    CURRENT_PROJECT_VERSION: 1
-    MARKETING_VERSION: 1.1.0
+    CURRENT_PROJECT_VERSION: 2
+    MARKETING_VERSION: 2.0.0
     IPHONEOS_DEPLOYMENT_TARGET: "17.0"
 
 targets:
@@ -81,14 +81,17 @@ targets:
           - he
           - fa
         # Privacy usage descriptions
-        NSCameraUsageDescription: "MERIDIAN uses the camera to scan QR codes and barcodes for quick domain lookup."
-        NSFaceIDUsageDescription: "Use Face ID to secure your MERIDIAN account."
+        NSCameraUsageDescription: "MERIDIAN uses the camera to scan QR codes, barcodes, and documents for intelligence capture."
+        NSFaceIDUsageDescription: "MERIDIAN uses Face ID to unlock your encrypted Intelligence Vault (CIPHER Protocol)."
         NSLocalNetworkUsageDescription: "MERIDIAN uses the local network for development server connections."
+        NSSpeechRecognitionUsageDescription: "MERIDIAN uses speech recognition for voice-activated intelligence queries."
+        NSMicrophoneUsageDescription: "MERIDIAN uses the microphone for voice queries and audio intelligence capture."
         # Background modes — required for remote notifications and background fetch
         UIBackgroundModes:
           - fetch
           - remote-notification
           - processing
+          - background-processing
         # App Transport Security
         NSAppTransportSecurity:
           NSAllowsArbitraryLoads: false
@@ -106,7 +109,7 @@ targets:
           - UIInterfaceOrientationPortraitUpsideDown
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
-        # Export compliance
+        # Export compliance — CIPHER Protocol uses standard CryptoKit AES-GCM (exempt)
         ITSAppUsesNonExemptEncryption: false
     settings:
       base:
@@ -119,13 +122,20 @@ targets:
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: ""
     dependencies:
-      # Fix: package key must match the top-level packages dictionary key
+      # SPM packages
       - package: apollo-ios
         product: Apollo
       - package: apollo-ios
         product: ApolloAPI
       - package: swift-collections
         product: Collections
+      # System frameworks — new engines
+      - sdk: NaturalLanguage.framework       # QUORUM, NEXUS, VAUNT, AXIOM, PRISM
+      - sdk: CryptoKit.framework             # CIPHER Protocol
+      - sdk: LocalAuthentication.framework   # CIPHER — Face ID / Touch ID
+      - sdk: Network.framework               # VAUNT — passive DNS fingerprinting
+      - sdk: BackgroundTasks.framework       # PRISM — offline model updates
+      - sdk: Vision.framework                # VAUNT — future document OCR
     scheme:
       testTargets:
         - MERIDIANTests
