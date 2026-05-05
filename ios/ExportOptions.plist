@@ -9,7 +9,7 @@
     <key>destination</key>
     <string>upload</string>
 
-    <!-- Manual signing — provisioning profile injected by Codemagic via xcode-project use-profiles -->
+    <!-- Manual signing - provisioning profile injected by Codemagic via xcode-project use-profiles -->
     <key>signingStyle</key>
     <string>manual</string>
 
