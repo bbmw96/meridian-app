@@ -1,6 +1,6 @@
 # On native Windows (non-wasm32) builds the cdylib target requires dlltool
 # which is part of MinGW. We override it here so that `cargo test` and
-# `cargo build` on Windows produce only an rlib — the cdylib/WASM output is
+# `cargo build` on Windows produce only an rlib  -  the cdylib/WASM output is
 # produced separately via: cargo build --target wasm32-unknown-unknown --release
 [build]
 # Force rlib-only on native Windows to avoid dlltool dependency

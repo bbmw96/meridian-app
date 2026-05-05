@@ -1,4 +1,4 @@
-# MERIDIAN — Global Business Intelligence OS
+# MERIDIAN  -  Global Business Intelligence OS
 # Makefile for development convenience
 
 .PHONY: all up down build test clean mql-build mql-test ios-setup backend-setup
